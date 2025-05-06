@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mod 2 Skills Demonstration Assignment</title>
+    <meta charset="UTF-8">
+    <title>My Personal Library</title>
   </head>
   <body>
-    <ol>
-      <li>#1. Explain the purpose of whitespace in HTML.</li> <li>Whitespace in HTML makes the code easier for people to read, but it doesn't affect how the page looks in the
-         browser.</li>
+    <header>
+      <h1>Welcome to My Personal Library</h1>
+    </header>
 
-      #2. Demonstrate the process for "commenting out" a line of HTML code, by commenting out this line.</li>
-      <li>#3. Explain and fix the HTML bug in the next line of code:
-        <p>There's something wrong with this line... what is it?/p>
-          <li>The bug is that the closing tag for the paragraph is missing a <, so it should be </p> instead of /p>.</li>
+    <main>
+      <!-- Introduction paragraph -->
+      <p>This is where I track books I love, want to read, or am currently reading im add some for my baker husband.</p>
 
-      </li>
-      <li>#4. Explain and fix the HTML bug in the next line of code:
-        <p><strong>There's something wrong with this line... what is it?</p></strong>
-      </li>The bug is that the tags are closed in the wrong order; the <strong> tag should close before the <p> tag.</li>
+      <!-- Book list with links and reading status -->
+      <!-- Each book links to more info or purchase site -->
+      <ul>
+        <li>
+          <a href="https://www.example.com/book1" target="_blank">Book Title One</a> - <em>Read</em>
+        </li>
+        <li>
+          <a href="https://www.example.com/book2" target="_blank">Book Title Two</a> - <em>Want to Read</em>
+        </li>
+        <li>
+          <a href="https://www.example.com/book3" target="_blank">Book Title Three</a> - <em>In Progress</em>
+        </li>
+      </ul>
 
-      <li>#5. Explain and fix the HTML bug in the next line of code: <li>The bug is that the alt text is missing quotation marks, so it should be alt="A picture of my cat".</li>
-        <img src="kitty.png" alt=A picture of my cat>
-      </li>
-    </ol>
+      <!-- Character entity example: star rating -->
+      <p>This book gets 5 stars: &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+
+      <!-- Book image -->
+      <img src="images/book-stack.jpg" alt="Stack of books on a table">
+    </main>
+
+    <footer>
+      <p>&copy; 2025 My Personal Library</p>
+    </footer>
   </body>
 </html>
