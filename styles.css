@@ -1,29 +1,141 @@
-.genre-adventure        { color: #ff5733; }  /* red-orange */
-.genre-biography        { color: #2e8b57; }  /* sea green */
-.genre-children         { color: #ff69b4; }  /* hot pink */
-.genre-contemporary     { color: #9370db; }  /* medium purple */
-.genre-dystopian        { color: #708090; }  /* slate gray */
-.genre-folklore         { color: #cd853f; }  /* peru */
-.genre-fantasy          { color: #00ced1; }  /* dark turquoise */
-.genre-graphic          { color: #daa520; }  /* goldenrod */
-.genre-historical       { color: #b22222; }  /* firebrick */
-.genre-history          { color: #4682b4; }  /* steel blue */
-.genre-horror           { color: #8b0000; }  /* dark red */
-.genre-magical          { color: #9932cc; }  /* dark orchid */
-.genre-middle           { color: #f4a460; }  /* sandy brown */
-.genre-mystery          { color: #483d8b; }  /* dark slate blue */
-.genre-philosophy       { color: #2f4f4f; }  /* dark slate gray */
-.genre-politics         { color: #800000; }  /* maroon */
-.genre-psychology       { color: #3cb371; }  /* medium sea green */
-.genre-religion         { color: #6a5acd; }  /* slate blue */
-.genre-romance          { color: #db7093; }  /* pale violet red */
-.genre-science          { color: #20b2aa; }  /* light sea green */
-.genre-scifi            { color: #00bfff; }  /* deep sky blue */
-.genre-selfhelp         { color: #ff8c00; }  /* dark orange */
-.genre-thriller         { color: #c71585; }  /* medium violet red */
-.genre-travel           { color: #468499; }  /* teal-gray */
-.genre-truecrime        { color: #556b2f; }  /* dark olive green */
-.genre-ya               { color: #ff1493; }  /* deep pink */
+body {
+  background-color: rgba(83, 58, 19, 0.24);
+  color: white;
+}
+
+
+
+
+.genre-adventure {
+  color: #ff5733;
+}
+
+/* red-orange */
+.genre-biography {
+  color: #2e8b57;
+}
+
+/* sea green */
+.genre-children {
+  color: #ff69b4;
+}
+
+/* hot pink */
+.genre-contemporary {
+  color: #9370db;
+}
+
+/* medium purple */
+.genre-dystopian {
+  color: #708090;
+}
+
+/* slate gray */
+.genre-folklore {
+  color: #cd853f;
+}
+
+/* peru */
+.genre-fantasy {
+  color: #00ced1;
+}
+
+/* dark turquoise */
+.genre-graphic {
+  color: #daa520;
+}
+
+/* goldenrod */
+.genre-historical {
+  color: #b22222;
+}
+
+/* firebrick */
+.genre-history {
+  color: #4682b4;
+}
+
+/* steel blue */
+.genre-horror {
+  color: #8b0000;
+}
+
+/* dark red */
+.genre-magical {
+  color: #9932cc;
+}
+
+/* dark orchid */
+.genre-middle {
+  color: #f4a460;
+}
+
+/* sandy brown */
+.genre-mystery {
+  color: #483d8b;
+}
+
+/* dark slate blue */
+.genre-philosophy {
+  color: #2f4f4f;
+}
+
+/* dark slate gray */
+.genre-politics {
+  color: #800000;
+}
+
+/* maroon */
+.genre-psychology {
+  color: #3cb371;
+}
+
+/* medium sea green */
+.genre-religion {
+  color: #6a5acd;
+}
+
+/* slate blue */
+.genre-romance {
+  color: #db7093;
+}
+
+/* pale violet red */
+.genre-science {
+  color: #20b2aa;
+}
+
+/* light sea green */
+.genre-scifi {
+  color: #00bfff;
+}
+
+/* deep sky blue */
+.genre-selfhelp {
+  color: #ff8c00;
+}
+
+/* dark orange */
+.genre-thriller {
+  color: #c71585;
+}
+
+/* medium violet red */
+.genre-travel {
+  color: #468499;
+}
+
+/* teal-gray */
+.genre-truecrime {
+  color: #556b2f;
+}
+
+/* dark olive green */
+.genre-ya {
+  color: #ff1493;
+}
+
+/* deep pink */
 body {
   background-color: black;
   color: white;
@@ -57,3 +169,134 @@ section {
 }
 
 /* 3. Background gradient for one*
+
+.genre-adventure {
+  color: #ff5733;
+}
+
+/* red-orange */
+.genre-biography {
+  color: #2e8b57;
+}
+
+/* sea green */
+.genre-children {
+  color: #ff69b4;
+}
+
+/* hot pink */
+.genre-contemporary {
+  color: #9370db;
+}
+
+/* medium purple */
+.genre-dystopian {
+  color: #708090;
+}
+
+/* slate gray */
+.genre-folklore {
+  color: #cd853f;
+}
+
+/* peru */
+.genre-fantasy {
+  color: #00ced1;
+}
+
+/* dark turquoise */
+.genre-graphic {
+  color: #daa520;
+}
+
+/* goldenrod */
+.genre-historical {
+  color: #b22222;
+}
+
+/* firebrick */
+.genre-history {
+  color: #4682b4;
+}
+
+/* steel blue */
+.genre-horror {
+  color: #8b0000;
+}
+
+/* dark red */
+.genre-magical {
+  color: #9932cc;
+}
+
+/* dark orchid */
+.genre-middle {
+  color: #f4a460;
+}
+
+/* sandy brown */
+.genre-mystery {
+  color: #483d8b;
+}
+
+/* dark slate blue */
+.genre-philosophy {
+  color: #2f4f4f;
+}
+
+/* dark slate gray */
+.genre-politics {
+  color: #800000;
+}
+
+/* maroon */
+.genre-psychology {
+  color: #3cb371;
+}
+
+/* medium sea green */
+.genre-religion {
+  color: #6a5acd;
+}
+
+/* slate blue */
+.genre-romance {
+  color: #db7093;
+}
+
+/* pale violet red */
+.genre-science {
+  color: #20b2aa;
+}
+
+/* light sea green */
+.genre-scifi {
+  color: #00bfff;
+}
+
+/* deep sky blue */
+.genre-selfhelp {
+  color: #ff8c00;
+}
+
+/* dark orange */
+.genre-thriller {
+  color: #c71585;
+}
+
+/* medium violet red */
+.genre-travel {
+  color: #468499;
+}
+
+/* teal-gray */
+.genre-truecrime {
+  color: #556b2f;
+}
+
+/* dark olive green */
+.genre-ya {
+  color: #ff1493;
+}
+
+/* deep pink */
