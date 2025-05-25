@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="overlay">
+    <h1>History</h1>
+    <p>This page will list all your History books here.</p>
+    <a href="index.html">← Back to Library</a>
+  </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>History Books</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="overlay">
+    <h1>History Books</h1>
+
+    <h2>📚 Books You Own</h2>
+    <ul id="book-list">
+      <!-- Saved books will appear here -->
+    </ul>
+
+    <h3>Add a New Book</h3>
+    <form id="book-form">
+      <input type="text" id="book-input" placeholder="Enter book title" required>
+      <button type="submit">Add Book</button>
+    </form>
+
+    <br>
+    <a href="index.html">← Back to Library</a>
+  </main>
+
+  <script>
+    const form = document.getElementById("book-form");
+    const input = document.getElementById("book-input");
+    const list = document.getElementById("book-list");
+    const STORAGE_KEY = "historyBooks";
+
+    const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+    savedBooks.forEach(title => addBookToList(title));
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const bookTitle = input.value.trim();
+      if (bookTitle) {
+        addBookToList(bookTitle);
+        savedBooks.push(bookTitle);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(savedBooks));
+        input.value = "";
+      }
+    });
+
+    function addBookToList(title) {
+      const li = document.createElement("li");
+      li.textContent = title;
+      list.appendChild(li);
+    }
+  </script>
+</body>
+</html>

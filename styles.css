@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  color: white;
+  color: rgb(8, 233, 147);
   font-family: Georgia, serif;
 }
 
@@ -132,7 +132,7 @@ body {
   color: #556b2f;
 }
 
-/* dark olive green */
+/* dark olive gr3en */
 .genre-ya {
   color: #ff1493;
 }
@@ -302,3 +302,72 @@ section {
 }
 
 /* deep pink */
+ body>
+
+/* Adds shadow to all text */
+body> {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Adds a semi-transparent dark box behind conest */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* 60% black */
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  max-width: 900px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design Media Queries */
+
+/* girl boss Mobile view: Make nav smaller and center text under 600px */
+@media (max-width: 600px) {
+  .navbar ul {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .overlay {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+/*  bigboi screens: ncrease font size and spacing over 1000px */
+@media (min-width: 1000px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .navbar li {
+    margin: 0 2rem;
+  }
+
+  .overlay {
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+}
+.scalable-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+

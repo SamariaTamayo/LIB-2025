@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Adventure</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="overlay">
+    <h1>Adventure</h1>
+    <p>This page will list all your Adventure books here.</p>
+    <a href="index.html">← Back to Library</a>
+  </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adventure Books</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="overlay">
+    <h1>Adventure Books</h1>
+
+    <h2>📚 Books You Own</h2>
+    <ul id="book-list">
+      <!-- Saved books will appear here if this works -->
+    </ul>
+
+    <h3>Add a New Book</h3>
+    <form id="book-form">
+      <input type="text" id="book-input" placeholder="Enter book title" required>
+      <button type="submit">Add Book</button>
+    </form>
+
+    <br>
+    <a href="index.html">← Back to Library</a>
+  </main>
+
+  <script>
+    const form = document.getElementById("book-form");
+    const input = document.getElementById("book-input");
+    const list = document.getElementById("book-list");
+    const STORAGE_KEY = "adventureBooks"; // change key per genre page
+
+    // Load saved books hopefully
+    const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+    savedBooks.forEach(title => addBookToList(title));
+
+    // Add new book?
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const bookTitle = input.value.trim();
+      if (bookTitle) {
+        addBookToList(bookTitle);
+        savedBooks.push(bookTitle);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(savedBooks));
+        input.value = "";
+      }
+    });
+
+    function addBookToList(title) {
+      const li = document.createElement("li");
+      li.textContent = title;
+      list.appendChild(li);
+    }
+  </script>
+</body>
+</html>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="adventure.html">Adventure</a></li>
+    <li><a href="biography-and-memoir.html">Biography</a></li>
+    <li><a href="childrens-books.html">Children</a></li>
+    <li><a href="contemporary-fiction.html">Contemp.</a></li>
+    <li><a href="dystopian.html">Dystopian</a></li>
+    <li><a href="fairy-tales-folklore.html">Folklore</a></li>
+    <li><a href="fantasy.html">Fantasy</a></li>
+    <li><a href="graphic-novels.html">Graphics</a></li>
+    <li><a href="historical-fiction.html">Historical</a></li>
+    <li><a href="history.html">History</a></li>
+    <li><a href="horror.html">Horror</a></li>
+    <li><a href="magical-realism.html">Magic</a></li>
+    <li><a href="middle-grade.html">Middle</a></li>
+    <li><a href="mystery.html">Mystery</a></li>
+    <li><a href="philosophy.html">Philosophy</a></li>
+    <li><a href="politics.html">Politics</a></li>
+    <li><a href="psychology.html">Psychology</a></li>
+    <li><a href="religion-spirituality.html">Spirituality</a></li>
+    <li><a href="romance.html">Romance</a></li>
+    <li><a href="science-nature.html">Science</a></li>
+    <li><a href="science-fiction-scifi.html">Sci-Fi</a></li>
+    <li><a href="self-help-personal-development.html">Self-Help</a></li>
+    <li><a href="thriller.html">Thriller</a></li>
+    <li><a href="travel.html">Travel</a></li>
+    <li><a href="true-crime.html">Crime</a></li>
+    <li><a href="young-adult-ya.html">YA</a></li>
+  </ul>
+</nav>
