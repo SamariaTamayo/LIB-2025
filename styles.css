@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  color: rgb(8, 233, 147);
+  color: rgb(16, 187, 121);
   font-family: Georgia, serif;
 }
 
@@ -302,12 +302,10 @@ section {
 }
 
 /* deep pink */
- body>
-
-/* Adds shadow to all text */
-body> {
+body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
 
 /* Adds a semi-transparent dark box behind conest */
 .overlay {
