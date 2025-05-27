@@ -1,0 +1,77 @@
+body {
+  font-family: 'Merriweather', serif;
+  background: url("horror-bg.jpg.png") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #f0f0f0;
+}
+
+/* Content container with soft transparency */
+main {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Header & Footer styling */
+header, footer {
+  background-color: rgba(50, 0, 0, 0.7);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 3px solid #7a1e1e;
+  text-shadow: 0 0 5px #000000aa;
+}
+
+/* Section styling */
+section {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid #a11a1a;
+  border-radius: 6px;
+}
+
+/* Link styling */
+a {
+  color: #ff5e5e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff1a1a;
+}
+.back-image-button img {
+  width: 70px; /* adjust size if needed */
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+.back-image-button img {
+  width: 60px;           /* adjust this to make smaller or larger */
+  height: auto;
+  display: block;
+  margin: 30px auto 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.1);
+}

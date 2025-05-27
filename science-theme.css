@@ -1,0 +1,77 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: url("science-bg.jpg.png") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #012a36;
+}
+
+/* Content container with glow */
+main {
+  background-color: rgba(255, 255, 255, 0.92);
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 124, 145, 0.5);
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: #00a6a6;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 3px solid #012a36;
+  text-shadow: 0 0 4px #ffffffaa;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #e1f8f9;
+  border-left: 6px solid #00a6a6;
+  border-radius: 8px;
+}
+
+/* Link Styling */
+a {
+  color: #005f73;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00a6a6;
+  text-decoration: underline;
+}
+.back-image-button img {
+  width: 70px; /* adjust size if needed */
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+.back-image-button img {
+  width: 60px;           /* adjust this to make smaller or larger */
+  height: auto;
+  display: block;
+  margin: 30px auto 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.1);
+}

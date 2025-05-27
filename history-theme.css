@@ -1,0 +1,81 @@
+body {
+  font-family: 'Merriweather', serif;
+  background: url("history-bg.jpg.png") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #3b2e1d;
+}
+
+main {
+  background-color: rgba(255, 248, 233, 0.7); /* was 0.9 — lowered for more transparency */
+  max-width: 950px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(59, 46, 29, 0.25); /* lightened the shadow */
+}
+
+
+header, footer {
+  background-color: rgba(64, 48, 34, 0.6); /* was 0.85 — lighter now */
+  color: #f5f0e6;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0 0 5px #00000077;
+  border-bottom: 3px solid #b58e56;
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Section layout */
+section {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #fcf6e3;
+  border-left: 6px solid #b58e56;
+  border-radius: 8px;
+}
+
+/* Links with antique feel */
+a {
+  color: #6a4b2a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b58e56;
+  text-decoration: underline;
+}
+.back-image-button img {
+  width: 70px; /* adjust size if needed */
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+.back-image-button img {
+  width: 60px;           /* adjust this to make smaller or larger */
+  height: auto;
+  display: block;
+  margin: 30px auto 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.1);
+}

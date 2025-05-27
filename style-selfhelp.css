@@ -1,0 +1,105 @@
+/* Apply overall futuristic vibe */
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(to bottom right, #f4faff, #d7e9f7);
+  margin: 0;
+  padding: 0;
+  color: #1c1c1c;
+}
+
+/* Container for main content */
+main.overlay {
+  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0, 64, 128, 0.15);
+  text-align: center;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 30px 0 15px;
+  color: #005a9c;
+}
+
+/* Book list styling */
+#book-list {
+  list-style-type: square;
+  padding-left: 20px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#book-list li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Back link */
+a {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #005999;
+}
+.back-image-button img {
+  width: 70px; /* adjust size if needed */
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+.back-image-button img {
+  width: 70px; /* adjust size if needed */
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+.back-image-button img {
+  width: 60px;           /* adjust this to make smaller or larger */
+  height: auto;
+  display: block;
+  margin: 30px auto 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.1);
+}

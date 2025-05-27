@@ -1,0 +1,108 @@
+body {
+  font-family: 'Comic Neue', cursive;
+  background: url("adventure-bg.jpg.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* Content area with fun overlay */
+main {
+  background-color: rgba(255, 255, 255, 0.85);
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border: 4px dashed #ffcc00;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #ff5e99;
+}
+
+/* List or section styling */
+section {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #fffdf0;
+  border-left: 5px solid #8be9fd;
+  border-radius: 8px;
+}
+
+/* Fun links */
+a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ff4081;
+  text-decoration: underline;
+}
+.navbar {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.navbar a {
+  display: inline-block;
+  background-color: #ffdc5e;
+  color: #1d1d1d;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-family: 'Comic Neue', cursive;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 2px 4px 0 #4e9fff;
+  transition: all 0.3s ease;
+  border: 2px solid #4e9fff;
+}
+
+.navbar a:hover {
+  background-color: #4e9fff;
+  color: white;
+  box-shadow: none;
+}
+.back-image-button img {
+  width: 70px; /* adjust size if needed */
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+.back-image-button img {
+  width: 60px;           /* adjust this to make smaller or larger */
+  height: auto;
+  display: block;
+  margin: 30px auto 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.1);
+}

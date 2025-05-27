@@ -4,9 +4,37 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  color: rgb(13, 216, 138);
+  color: rgb(43, 220, 152);
   font-family: Georgia, serif;
 }
+.book-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.book-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 1.2rem;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-decoration: none;
+  border: 3px solid #ff0000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #ff0000;
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 10px #ff0000;
+}
+
 
 .genre-adventure {
   color: #ff5733;
@@ -59,7 +87,7 @@ body {
 
 /* steel blue */
 .genre-horror {
-  color: #8b0000;
+  color: #d12121;
 }
 
 /* dark red */
@@ -79,12 +107,12 @@ body {
 
 /* dark slate blue */
 .genre-philosophy {
-  color: #2f4f4f;
+  color: #dcf407;
 }
 
 /* dark slate gray */
 .genre-politics {
-  color: #800000;
+  color: #04f308;
 }
 
 /* maroon */
@@ -119,7 +147,7 @@ body {
 
 /* dark orange */
 .genre-thriller {
-  color: #c71585;
+  color: #ebd0ac;
 }
 
 /* medium violet red */
@@ -129,7 +157,7 @@ body {
 
 /* teal-gray */
 .genre-truecrime {
-  color: #556b2f;
+  color: #f40505;
 }
 
 /* dark olive gr3en */
@@ -367,5 +395,22 @@ a:hover {
   margin: 1rem auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.book-button {
+  display: inline-block;
+  margin: 2rem auto;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  background-color: #8278d2;
+  color: rgb(8, 8, 8);
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.book-button:hover {
+  background-color: #0592ef;
 }
 
