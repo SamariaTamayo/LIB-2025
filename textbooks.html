@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style-dark.css">
+  <title>Textbooks</title>
+
 </head>
+
 <body>
   <main class="overlay">
-    <h1>Travel</h1>
-    <p>This page will list all your Travel books here.</p>
+    <h1>Textbooks</h1>
+    <p>This page will list all your Textbooks books here.</p>
     <a href="index.html">← Back to Library</a>
   </main>
 </body>
+
 </html>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Travel Books</title>
+  <title>Textbooks Books</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <main class="overlay">
-    <h1>Travel Books</h1>
+    <h1>Textbooks Books</h1>
 
     <h2>📚 Books You Own</h2>
     <ul id="book-list">
@@ -40,14 +43,13 @@
     </form>
 
     <br>
-    <a href="index.html">← Back to Library</a>
   </main>
 
   <script>
     const form = document.getElementById("book-form");
     const input = document.getElementById("book-input");
     const list = document.getElementById("book-list");
-    const STORAGE_KEY = "travelBooks";
+    const STORAGE_KEY = "textBooks";
 
     const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
     savedBooks.forEach(title => addBookToList(title));
@@ -69,5 +71,15 @@
       list.appendChild(li);
     }
   </script>
+  <h2>Professional / Technical / Academic</h2>
+  <ul>
+    <li>A3.0 MA 3.0 2020 - Standard Welding Terms and Definitions</li>
+    <li>API 1104 Code Clinic Study Guide (22nd Ed.)</li>
+    <li>Blue Jackets Manual (25th Ed.)</li>
+    <li>Standing Bidness by Nichols and Munchkin</li>
+    <li>Welding Inspection Technology (6th Ed.)</li>
+  </ul>
+
 </body>
+
 </html>
