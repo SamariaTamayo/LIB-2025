@@ -1,12 +1,73 @@
+/* === GLOBAL STYLES === */
 body {
   background-image: url("image0.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  color: rgb(43, 220, 152);
+  background-color: rgb(125, 226, 82);
+  color: rgb(26, 121, 34);
   font-family: Georgia, serif;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  margin: 0;
+  padding: 0;
 }
+
+/*CONTAINERS dumb ass dont fuck with this
+main {
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+header {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #11270d;
+  border-radius: 12px;
+}
+
+/* overlay gurl */
+.overlay {
+  background-color: rgba(37, 81, 35, 0.6);
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  color: #111;
+}
+
+/* GENRECOLORS */
+.genre-adventure { color: #ff5733; }
+.genre-biography { color: #2e8b57; }
+.genre-children { color: #ff69b4; }
+.genre-contemporary { color: #9370db; }
+.genre-dystopian { color: #708090; }
+.genre-folklore { color: #cd853f; }
+.genre-fantasy { color: #00ced1; }
+.genre-graphic { color: #daa520; }
+.genre-historical { color: #b22222; }
+.genre-history { color: #4682b4; }
+.genre-horror { color: #8b0000; }
+.genre-magical { color: #9932cc; }
+.genre-middle { color: #f4a460; }
+.genre-mystery { color: #483d8b; }
+.genre-philosophy { color: #2f4f4f; }
+.genre-politics { color: #800000; }
+.genre-psychology { color: #3cb371; }
+.genre-religion { color: #6a5acd; }
+.genre-romance { color: #db7093; }
+.genre-science { color: #20b2aa; }
+.genre-scifi { color: #00bfff; }
+.genre-selfhelp { color: #ff8c00; }
+.genre-thriller { color: #c71585; }
+.genre-travel { color: #468499; }
+.genre-truecrime { color: #9cc94d; }
+.genre-ya { color: #f0148a; }
+
+/* BUTTONS  */
 .book-links {
   text-align: center;
   margin-top: 20px;
@@ -14,336 +75,51 @@ body {
 
 .book-button {
   display: inline-block;
-  margin: 10px;
+  margin: 1rem;
   padding: 12px 24px;
   font-family: 'UnifrakturCook', cursive;
   font-size: 1.2rem;
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: #b1e1ff;
+  color: #111;
   text-decoration: none;
-  border: 3px solid #ff0000;
+  border: 3px solid #444;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   letter-spacing: 1px;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .book-button:hover {
-  background-color: #ff0000;
-  color: #fff;
+  transform: translateY(-4px) scale(1.05);
+  background-color: #ffd2ff;
+  color: #000;
   border-color: #fff;
-  box-shadow: 0 0 10px #ff0000;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 0 12px #3d03fd;
 }
 
-
-.genre-adventure {
-  color: #ff5733;
+.book-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* red-orange */
-.genre-biography {
-  color: #2e8b57;
-}
-
-/* sea green */
-.genre-children {
-  color: #ff69b4;
-}
-
-/* hot pink */
-.genre-contemporary {
-  color: #9370db;
-}
-
-/* medium purple */
-.genre-dystopian {
-  color: #dd78c4;
-}
-
-/* slate gray */
-.genre-folklore {
-  color: #cdcb3f;
-}
-
-/* peru */
-.genre-fantasy {
-  color: #00ced1;
-}
-
-/* dark turquoise */
-.genre-graphic {
-  color: #daa520;
-}
-
-/* goldenrod */
-.genre-historical {
-  color: #b22222;
-}
-
-/* firebrick */
-.genre-history {
-  color: #4682b4;
-}
-
-/* steel blue */
-.genre-horror {
-  color: #d12121;
-}
-
-/* dark red */
-.genre-magical {
-  color: #9932cc;
-}
-
-/* dark orchid */
-.genre-middle {
-  color: #f4a460;
-}
-
-/* sandy brown */
-.genre-mystery {
-  color: #483d8b;
-}
-
-/* dark slate blue */
-.genre-philosophy {
-  color: #dcf407;
-}
-
-/* dark slate gray */
-.genre-politics {
-  color: #04f308;
-}
-
-/* maroon */
-.genre-psychology {
-  color: #3cb371;
-}
-
-/* medium sea green */
-.genre-religion {
-  color: #6a5acd;
-}
-
-/* slate blue */
-.genre-romance {
-  color: #db7093;
-}
-
-/* pale violet red */
-.genre-science {
-  color: #20b2aa;
-}
-
-/* light sea green */
-.genre-scifi {
-  color: #00bfff;
-}
-
-/* deep sky blue */
-.genre-selfhelp {
-  color: #ff8c00;
-}
-
-/* dark orange */
-.genre-thriller {
-  color: #ebd0ac;
-}
-
-/* medium violet red */
-.genre-travel {
-  color: #468499;
-}
-
-/* teal-gray */
-.genre-truecrime {
-  color: #f40505;
-}
-
-/* dark olive gr3en */
-.genre-ya {
-  color: #ff1493;
-}
-
-/* deep pink */
-body {
-  background-color: black;
-  color: white;
-}
-/* 1. Add padding/margins for spacing */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-header {
-  padding: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  background-color: #f2f2f2;
-}
-
-main {
-  padding: 30px;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-/* 2. Add borders to one or more elements */
-section {
-  border: 2px solid #333;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-
-/* 3. Background gradient for one*
-
-.genre-adventure {
-  color: #ff5733;
-}
-
-/* red-orange */
-.genre-biography {
-  color: #2e8b57;
-}
-
-/* sea green */
-.genre-children {
-  color: #ff69b4;
-}
-
-/* hot pink */
-.genre-contemporary {
-  color: #9370db;
-}
-
-/* medium purple */
-.genre-dystopian {
-  color: #708090;
-}
-
-/* slate gray */
-.genre-folklore {
-  color: #cd853f;
-}
-
-/* peru */
-.genre-fantasy {
-  color: #00ced1;
-}
-
-/* dark turquoise */
-.genre-graphic {
-  color: #daa520;
-}
-
-/* goldenrod */
-.genre-historical {
-  color: #b22222;
-}
-
-/* firebrick */
-.genre-history {
-  color: #4682b4;
-}
-
-/* steel blue */
-.genre-horror {
-  color: #8b0000;
-}
-
-/* dark red */
-.genre-magical {
-  color: #9932cc;
-}
-
-/* dark orchid */
-.genre-middle {
-  color: #f4a460;
-}
-
-/* sandy brown */
-.genre-mystery {
-  color: #483d8b;
-}
-
-/* dark slate blue */
-.genre-philosophy {
-  color: #2f4f4f;
-}
-
-/* dark slate gray */
-.genre-politics {
-  color: #800000;
-}
-
-/* maroon */
-.genre-psychology {
-  color: #3cb371;
-}
-
-/* medium sea green */
-.genre-religion {
-  color: #6a5acd;
-}
-
-/* slate blue */
-.genre-romance {
-  color: #db7093;
-}
-
-/* pale violet red */
-.genre-science {
-  color: #20b2aa;
-}
-
-/* light sea green */
-.genre-scifi {
-  color: #00bfff;
-}
-
-/* deep sky blue */
-.genre-selfhelp {
-  color: #ff8c00;
-}
-
-/* dark orange */
-.genre-thriller {
-  color: #c71585;
-}
-
-/* medium violet red */
-.genre-travel {
-  color: #468499;
-}
-
-/* teal-gray */
-.genre-truecrime {
-  color: #556b2f;
-}
-
-/* dark olive green */
-.genre-ya {
-  color: #ff1493;
-}
-
-/* deep pink */
-body {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-
-/* Adds a semi-transparent dark box behind conest */
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* 60% black */
-  padding: 2rem;
-  margin: 2rem auto;
+/*  IMAGES/trumpsnudes  */
+.scalable-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
   border-radius: 10px;
-  max-width: 900px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/*  LINKS  */
 a {
   color: inherit;
   text-decoration: none;
@@ -353,9 +129,15 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Responsive Design Media Queries */
+/* SECTION BORDERS */
+section {
+  border: 2px solid #333;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
 
-/* girl boss Mobile view: Make nav smaller and center text under 600px */
+/* RESPONSIVE syle  */
 @media (max-width: 600px) {
   .navbar ul {
     display: block;
@@ -373,7 +155,6 @@ a:hover {
   }
 }
 
-/*  bigboi screens: ncrease font size and spacing over 1000px */
 @media (min-width: 1000px) {
   body {
     font-size: 1.2rem;
@@ -388,29 +169,3 @@ a:hover {
     margin: 2rem auto;
   }
 }
-.scalable-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.book-button {
-  display: inline-block;
-  margin: 2rem auto;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.1rem;
-  text-decoration: none;
-  background-color: #8278d2;
-  color: rgb(8, 8, 8);
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-  text-align: center;
-}
-
-.book-button:hover {
-  background-color: #0592ef;
-}
-
