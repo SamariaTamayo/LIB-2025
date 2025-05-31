@@ -5,10 +5,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-color: rgb(125, 226, 82);
-  color: rgb(26, 121, 34);
+  background-color: rgba(125, 226, 82, 0.2); /* light tint */
+  color: rgb(27, 122, 35);
   font-family: Georgia, serif;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  text-shadow: 2px 2px 4px rgba(45, 187, 206, 0.8);
   margin: 0;
   padding: 0;
 }
@@ -28,16 +28,23 @@ header {
   border-radius: 12px;
 }
 
-/* overlay gurl */
+/* .overlay gurl */
+/* this box keeps my book chaos in check */
 .overlay {
-  background-color: rgba(37, 81, 35, 0.6);
-  padding: 2rem;
-  margin: 2rem auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  max-width: 900px;
-  color: #111;
+  background-color: rgba(37, 81, 35, 0.6); /* forest vibes but make it see-through */
+  padding: 2rem; /* gotta give it space to breathe */
+  margin: 2rem auto; /* center it like the main character it is */
+  border-radius: 12px; /* round those corners — we don’t do sharp edges here */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* drop a lil shadow like it’s mysterious */
+  max-width: 900px; /* big but not too big — like my TBR pile */
+  color: #111; /* dark text for high drama and high contrast */
 }
+/* making sure my links are legible even when the background's wild */
+.overlay a {
+  font-weight: bold; /* these links got confidence now */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* subtle drop shadow, no neon glow this time */
+}
+
 
 /* GENRECOLORS */
 .genre-adventure { color: #ff5733; }
@@ -79,7 +86,7 @@ header {
   padding: 12px 24px;
   font-family: 'UnifrakturCook', cursive;
   font-size: 1.2rem;
-  background-color: #b1e1ff;
+  background-color: #82d783;
   color: #111;
   text-decoration: none;
   border: 3px solid #444;
@@ -92,15 +99,15 @@ header {
 
 .book-button:hover {
   transform: translateY(-4px) scale(1.05);
-  background-color: #ffd2ff;
+  background-color: #acac03;
   color: #000;
-  border-color: #fff;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 0 12px #3d03fd;
+  border-color: #f5f4f4;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 0 12px #eeeeef;
 }
 
 .book-button:active {
   transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(168, 5, 5, 0.2);
 }
 
 /*  IMAGES/trumpsnudes  */
@@ -169,3 +176,9 @@ section {
     margin: 2rem auto;
   }
 }
+.overlay a {
+  font-family: 'UnifrakturCook', cursive;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
