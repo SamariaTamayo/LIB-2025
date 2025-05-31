@@ -179,6 +179,15 @@ section {
 .overlay a {
   font-family: 'UnifrakturCook', cursive;
   font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(24, 23, 23, 0.5);
 }
 
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0.7); /* dark overlay */
+  margin-top: 40px;
+  border-top: 1px solid #444;
+}
