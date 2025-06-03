@@ -3,33 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Middle Grade</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Horror</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/horror-theme.css">
 </head>
 <body>
   <main class="overlay">
-    <h1>Middle Grade</h1>
-    <p>This page will list all your Middle Grade books here.</p>
+    <h1>Horror</h1>
+    <p>This page will list all your Horror books here.</p>
 <a href="index.html" class="back-image-button">
-  <img src="CRUSTYHOME.png" alt="Back to Library">
+  <img src="../iamges/CRUSTYHOME.png" alt="Back to Library">
 </a>
+
   </main>
 </body>
 </html>
-
-<!-- COPY BELOW FOR EACH FILE -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Middle Grade Books</title>
-   <link rel="stylesheet" href="style-kids.css">
-</head>
+  <title>Horror Books</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/horror-theme.css">
 </head>
 <body>
   <main class="overlay">
-    <h1>Middle Grade Books</h1>
+    <h1>Horror Books</h1>
 
     <h2>📚 Books You Own</h2>
     <ul id="book-list">
@@ -49,7 +48,7 @@
     const form = document.getElementById("book-form");
     const input = document.getElementById("book-input");
     const list = document.getElementById("book-list");
-    const STORAGE_KEY = "middlegradeBooks";
+    const STORAGE_KEY = "horrorBooks";
 
     const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
     savedBooks.forEach(title => addBookToList(title));
@@ -71,11 +70,12 @@
       list.appendChild(li);
     }
   </script>
-  <h2>Middle Grade</h2>
+  <h2>Horror</h2>
 <ul>
-  <li>Jinx</li>
-  <li>The Miraculous Journey of Edward Tulane</li>
-  <li>The Underneath</li>
+  <li>Bird Box</li>
+  <li>Edgar Allan Poe: Great Tales and Poems</li>
+  <li>The Outsider</li>
+  <li>Warm Bodies</li>
 </ul>
 
 </body>

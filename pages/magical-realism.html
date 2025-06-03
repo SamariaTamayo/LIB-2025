@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <link rel="stylesheet" href="../css/fantasy-theme.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horror</title>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="horror-theme.css">
+  <title>Magical Realism</title>
 </head>
+
 <body>
   <main class="overlay">
-    <h1>Horror</h1>
-    <p>This page will list all your Horror books here.</p>
-<a href="index.html" class="back-image-button">
-  <img src="CRUSTYHOME.png" alt="Back to Library">
+    <h1>Magical Realism</h1>
+    <p>This page will list all your Magical Realism books here.</p>
+   <a href="index.html" class="back-image-button">
+  <img src="../images/CRUSTYHOME.png" alt="Back to Library">
 </a>
 
   </main>
 </body>
+
 </html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Horror Books</title>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="horror-theme.css">
+  <title>Magical Realism Books</title>
 </head>
+
 <body>
   <main class="overlay">
-    <h1>Horror Books</h1>
+    <h1>Magical Realism Books</h1>
 
     <h2>📚 Books You Own</h2>
     <ul id="book-list">
@@ -48,7 +50,7 @@
     const form = document.getElementById("book-form");
     const input = document.getElementById("book-input");
     const list = document.getElementById("book-list");
-    const STORAGE_KEY = "horrorBooks";
+    const STORAGE_KEY = "magicalrealismBooks";
 
     const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
     savedBooks.forEach(title => addBookToList(title));
@@ -70,13 +72,11 @@
       list.appendChild(li);
     }
   </script>
-  <h2>Horror</h2>
-<ul>
-  <li>Bird Box</li>
-  <li>Edgar Allan Poe: Great Tales and Poems</li>
-  <li>The Outsider</li>
-  <li>Warm Bodies</li>
-</ul>
+  <h2>Magical Realism</h2>
+  <ul>
+    <li>The Vegetarian</li>
+  </ul>
 
 </body>
+
 </html>

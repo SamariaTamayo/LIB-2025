@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Historical Fiction</title>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="history-theme.css">
+  <title>Science Fiction (Sci-Fi)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/science-theme.css">
 </head>
+
 <body>
   <main class="overlay">
-    <h1>Historical Fiction</h1>
-    <p>This page will list all your Historical Fiction books here.</p>
-   <a href="index.html" class="back-image-button">
-  <img src="CRUSTYHOME.png" alt="Back to Library">
-</a>
+    <h1>Science Fiction (Sci-Fi)</h1>
+    <p>This page will list all your Science Fiction (Sci-Fi) books here.</p>
+    <a href="index.html" class="back-image-button">
+      <img src="../images/CRUSTYHOME.png" alt="Back to Library">
+    </a>
+
   </main>
 </body>
+
 </html>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Historical Fiction Books</title>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="history-theme.css">
+  <title>Science Fiction (Sci-Fi) Books</title>
+
 </head>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/science-theme.css">
+
 <body>
   <main class="overlay">
-    <h1>Historical Fiction Books</h1>
+    <h1>Science Fiction (Sci-Fi) Books</h1>
 
     <h2>📚 Books You Own</h2>
     <ul id="book-list">
@@ -41,14 +52,13 @@
     </form>
 
     <br>
-
   </main>
 
   <script>
     const form = document.getElementById("book-form");
     const input = document.getElementById("book-input");
     const list = document.getElementById("book-list");
-    const STORAGE_KEY = "historicalfictionBooks";
+    const STORAGE_KEY = "sciencefictionscifiBooks";
 
     const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
     savedBooks.forEach(title => addBookToList(title));
@@ -70,13 +80,22 @@
       list.appendChild(li);
     }
   </script>
-<h2>Historical Fiction</h2>
-<ul>
-  <li>A Thousand Splendid Suns</li>
-  <li>No Heaven for Good Boys</li>
-  <li>Shanghai Girls</li>
-  <li>Waiting by Ha Jin</li>
-  <li>War and Peace</li>
-</ul>
+  <h2>Science Fiction</h2>
+  <ul>
+    <li>Dan Simmons - The Fall of Hyperion, Hyperion, Endymion</li>
+    <li>Dune Vol. 1 & 2</li>
+    <li>Infinity Gate</li>
+    <li>The Martian</li>
+  </ul>
+  <h2>Science and Nature</h2>
+  <ul>
+    <li>M.R. Carey - The Case for Mars</li>
+  </ul>
+  <h2>Science and Nature</h2>
+  <ul>
+    <li>M.R. Carey - The Case for Mars</li>
+  </ul>
+
 </body>
+
 </html>

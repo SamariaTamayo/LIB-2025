@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="fantasy-theme.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fantasy</title>
+  <link rel="stylesheet" href="../css/style-dark.css">
+  <title>Textbooks</title>
+
 </head>
 
 <body>
   <main class="overlay">
-    <h1>Fantasy</h1>
-    <p>This page will list all your Fantasy books here.</p>
-<a href="index.html" class="back-image-button">
-  <img src="CRUSTYHOME.png" alt="Back to Library">
-</a>
+    <h1>Textbooks</h1>
+    <p>This page will list all your Textbooks books here.</p>
+  <a href="index.html" class="back-image-button"></a>
+  <img src="../images/CRUSTYHOME.png" alt="Back to Library">
   </main>
 </body>
 
@@ -24,13 +24,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Fantasy Books</title>
+  <title>Textbooks Books</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <main class="overlay">
-    <h1>Fantasy Books</h1>
+    <h1>Textbooks Books</h1>
 
     <h2>📚 Books You Own</h2>
     <ul id="book-list">
@@ -42,6 +42,7 @@
       <input type="text" id="book-input" placeholder="Enter book title" required>
       <button type="submit">Add Book</button>
     </form>
+
     <br>
   </main>
 
@@ -49,7 +50,7 @@
     const form = document.getElementById("book-form");
     const input = document.getElementById("book-input");
     const list = document.getElementById("book-list");
-    const STORAGE_KEY = "fantasyBooks";
+    const STORAGE_KEY = "textBooks";
 
     const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
     savedBooks.forEach(title => addBookToList(title));
@@ -71,17 +72,13 @@
       list.appendChild(li);
     }
   </script>
-  <h2>Fantasy</h2>
+  <h2>Professional / Technical / Academic</h2>
   <ul>
-    <li>Wicked</li>
-    <li>Furies of Calderon by Jim Butcher</li>
-    <li>Harry Potter Series - Books 1-7</li>
-    <li>Jim Butcher - Death Masks, Storm Front, Blood Rites, Grave Peril, Fool Moon</li>
-    <li>Lore</li>
-    <li>Medusa's Sisters</li>
-    <li>Quidditch Through the Ages</li>
-    <li>The Atlas Six</li>
-    <li>The Magicians Trilogy by Lev Grossman</li>
+    <li>A3.0 MA 3.0 2020 - Standard Welding Terms and Definitions</li>
+    <li>API 1104 Code Clinic Study Guide (22nd Ed.)</li>
+    <li>Blue Jackets Manual (25th Ed.)</li>
+    <li>Standing Bidness by Nichols and Munchkin</li>
+    <li>Welding Inspection Technology (6th Ed.)</li>
   </ul>
 
 </body>

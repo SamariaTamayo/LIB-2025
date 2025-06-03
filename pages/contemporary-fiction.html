@@ -3,31 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Science and Nature</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="science-theme.css">
+  <title>Contemporary Fiction</title>
+  <link rel="stylesheet" href="../css/style-dark.css">
 </head>
 <body>
   <main class="overlay">
-    <h1>Science and Nature</h1>
-    <p>This page will list all your Science and Nature books here.</p>
+    <h1>Contemporary Fiction</h1>
+    <p></p>
   <a href="index.html" class="back-image-button">
-  <img src="CRUSTYHOME.png" alt="Back to Library">
+  <img src="../images/CRUSTYHOME.png" alt="Back to Library">
 </a>
-
   </main>
 </body>
 </html>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Science and Nature Books</title>
+  <title>Contemporary Fiction Books</title>
+  <link rel="stylesheet" href="../css/style-dark.css">
 </head>
 <body>
   <main class="overlay">
-    <h1>Science and Nature Books</h1>
+    <h1>Contemporary Fiction Books</h1>
 
     <h2>📚 Books You Own</h2>
     <ul id="book-list">
@@ -47,7 +45,7 @@
     const form = document.getElementById("book-form");
     const input = document.getElementById("book-input");
     const list = document.getElementById("book-list");
-    const STORAGE_KEY = "sciencenatureBooks";
+    const STORAGE_KEY = "contemporaryfictionBooks";
 
     const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
     savedBooks.forEach(title => addBookToList(title));
@@ -69,14 +67,18 @@
       list.appendChild(li);
     }
   </script>
-  <h2>Science and Nature</h2>
+<h2>Contemporary Fiction</h2>
 <ul>
-  <li>M.R. Carey - The Case for Mars</li>
-</ul>
-<h2>Science and Nature</h2>
-<ul>
-  <li>M.R. Carey - The Case for Mars</li>
+  <li>A God of Animals</li>
+  <li>A Little Life</li>
+  <li>Cabot - The Art of Racing in the Rain</li>
+  <li>Divine Sisters of the Yaha Sisterhood</li>
+  <li>Lolita</li>
+  <li>The Devil Wears Prada</li>
+  <li>The Silver Star</li>
 </ul>
 
+
 </body>
+
 </html>

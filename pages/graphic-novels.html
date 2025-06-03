@@ -3,36 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Self-Help / Personal Development</title>
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Self-Help / Personal Development</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style-selfhelp.css">
-</head>
-
+  <title>Graphic Novels</title>
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <main class="overlay">
-    <h1>Self-Help / Personal Development</h1>
-    <p>This page will list all your Self-Help / Personal Development books here.</p>
-    <a href="index.html">← Back to Library</a>
+    <h1>Graphic Novels</h1>
+    <p>This page will list all your Graphic Novels books here.</p>
+<a href="index.html" class="back-image-button">
+  <img src="../images/CRUSTYHOME.png" alt="Back to Library">
+</a>
   </main>
 </body>
 </html>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Self-Help / Personal Development Books</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="science-theme.css">
+  <title>Graphic Novels Books</title>
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <main class="overlay">
-    <h1>Self-Help / Personal Development Books</h1>
+    <h1>Graphic Novels Books</h1>
 
     <h2>📚 Books You Own</h2>
     <ul id="book-list">
@@ -52,7 +45,7 @@
     const form = document.getElementById("book-form");
     const input = document.getElementById("book-input");
     const list = document.getElementById("book-list");
-    const STORAGE_KEY = "selfhelppersonaldevelopmentBooks";
+    const STORAGE_KEY = "graphicnovelsBooks";
 
     const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
     savedBooks.forEach(title => addBookToList(title));
@@ -74,10 +67,15 @@
       list.appendChild(li);
     }
   </script>
-  <h2>Self-Help / Personal Development</h2>
+  <h2>Graphic Novels</h2>
 <ul>
-  <li>Codependency No More</li>
-  <li>The New Father: The Dad's Guide to the First Years</li>
+  <li>Beastars Vol. 1-5</li>
+  <li>Girl Juice</li>
+  <li>Persepolis</li>
+  <li>Spy Family Series Vol. 1</li>
+  <li>MAUS</li>
+  <li>The Apothecary Diaries</li>
+  <li>Toradora Vol. 1-8</li>
 </ul>
 
 </body>

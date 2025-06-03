@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <link rel="stylesheet" href="../css/fantasy-theme.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Religion / Spirituality</title>
-  <link rel="stylesheet" href="style-dark.css">
+  <title>Fantasy</title>
 </head>
+
 <body>
   <main class="overlay">
-    <h1>Religion / Spirituality</h1>
-    <p>This page will list all your Religion / Spirituality books here.</p>
-    <a href="index.html" class="back-image-button">
-  <img src="CRUSTYHOME.png" alt="Back to Library">
+    <h1>Fantasy</h1>
+    <p>This page will list all your Fantasy books here.</p>
+<a href="index.html" class="back-image-button">
+  <img src="../images/CRUSTYHOME.png" alt="Back to Library">
 </a>
-
-
   </main>
 </body>
+
 </html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Religion / Spirituality Books</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Fantasy Books</title>
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
   <main class="overlay">
-    <h1>Religion / Spirituality Books</h1>
+    <h1>Fantasy Books</h1>
 
     <h2>📚 Books You Own</h2>
     <ul id="book-list">
@@ -39,16 +42,14 @@
       <input type="text" id="book-input" placeholder="Enter book title" required>
       <button type="submit">Add Book</button>
     </form>
-
     <br>
-    
   </main>
 
   <script>
     const form = document.getElementById("book-form");
     const input = document.getElementById("book-input");
     const list = document.getElementById("book-list");
-    const STORAGE_KEY = "religionspiritualityBooks";
+    const STORAGE_KEY = "fantasyBooks";
 
     const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
     savedBooks.forEach(title => addBookToList(title));
@@ -70,5 +71,19 @@
       list.appendChild(li);
     }
   </script>
+  <h2>Fantasy</h2>
+  <ul>
+    <li>Wicked</li>
+    <li>Furies of Calderon by Jim Butcher</li>
+    <li>Harry Potter Series - Books 1-7</li>
+    <li>Jim Butcher - Death Masks, Storm Front, Blood Rites, Grave Peril, Fool Moon</li>
+    <li>Lore</li>
+    <li>Medusa's Sisters</li>
+    <li>Quidditch Through the Ages</li>
+    <li>The Atlas Six</li>
+    <li>The Magicians Trilogy by Lev Grossman</li>
+  </ul>
+
 </body>
+
 </html>

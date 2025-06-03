@@ -6,9 +6,9 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-color: rgba(125, 226, 82, 0.2); /* light tint */
-  color: rgb(27, 122, 35);
+  color: rgb(41, 163, 51);
   font-family: Georgia, serif;
-  text-shadow: 2px 2px 4px rgba(45, 187, 206, 0.8);
+  text-shadow: 2px 2px 4px rgba(247, 80, 80, 0.8);
   margin: 0;
   padding: 0;
 }
@@ -31,7 +31,7 @@ header {
 /* .overlay gurl */
 /* this box keeps my book chaos in check */
 .overlay {
-  background-color: rgba(37, 81, 35, 0.6); /* forest vibes but make it see-through */
+  background-color: rgba(75, 172, 70, 0.6); /* forest vibes but make it see-through */
   padding: 2rem; /* gotta give it space to breathe */
   margin: 2rem auto; /* center it like the main character it is */
   border-radius: 12px; /* round those corners — we don’t do sharp edges here */
@@ -84,7 +84,6 @@ header {
   display: inline-block;
   margin: 1rem;
   padding: 12px 24px;
-  font-family: 'UnifrakturCook', cursive;
   font-size: 1.2rem;
   background-color: #82d783;
   color: #111;
@@ -175,12 +174,6 @@ section {
     max-width: 1000px;
     margin: 2rem auto;
   }
-}
-.overlay a {
-  font-family: 'UnifrakturCook', cursive;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(24, 23, 23, 0.5);
-}
 
 .site-footer {
   text-align: center;
@@ -190,4 +183,14 @@ section {
   background-color: rgba(0, 0, 0, 0.7); /* dark overlay */
   margin-top: 40px;
   border-top: 1px solid #444;
+}
+.crusty-pic {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  z-index: 1000;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
 }

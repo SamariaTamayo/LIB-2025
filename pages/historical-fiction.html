@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graphic Novels</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Historical Fiction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/history-theme.css">
 </head>
 <body>
   <main class="overlay">
-    <h1>Graphic Novels</h1>
-    <p>This page will list all your Graphic Novels books here.</p>
-<a href="index.html" class="back-image-button">
-  <img src="CRUSTYHOME.png" alt="Back to Library">
+    <h1>Historical Fiction</h1>
+    <p>This page will list all your Historical Fiction books here.</p>
+   <a href="index.html" class="back-image-button">
+  <img src="../images/CRUSTYHOME.png" alt="Back to Library">
 </a>
   </main>
 </body>
@@ -20,12 +21,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Graphic Novels Books</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Historical Fiction Books</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/history-theme.css">
 </head>
 <body>
   <main class="overlay">
-    <h1>Graphic Novels Books</h1>
+    <h1>Historical Fiction Books</h1>
 
     <h2>📚 Books You Own</h2>
     <ul id="book-list">
@@ -39,13 +41,14 @@
     </form>
 
     <br>
+
   </main>
 
   <script>
     const form = document.getElementById("book-form");
     const input = document.getElementById("book-input");
     const list = document.getElementById("book-list");
-    const STORAGE_KEY = "graphicnovelsBooks";
+    const STORAGE_KEY = "historicalfictionBooks";
 
     const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
     savedBooks.forEach(title => addBookToList(title));
@@ -67,16 +70,13 @@
       list.appendChild(li);
     }
   </script>
-  <h2>Graphic Novels</h2>
+<h2>Historical Fiction</h2>
 <ul>
-  <li>Beastars Vol. 1-5</li>
-  <li>Girl Juice</li>
-  <li>Persepolis</li>
-  <li>Spy Family Series Vol. 1</li>
-  <li>MAUS</li>
-  <li>The Apothecary Diaries</li>
-  <li>Toradora Vol. 1-8</li>
+  <li>A Thousand Splendid Suns</li>
+  <li>No Heaven for Good Boys</li>
+  <li>Shanghai Girls</li>
+  <li>Waiting by Ha Jin</li>
+  <li>War and Peace</li>
 </ul>
-
 </body>
 </html>

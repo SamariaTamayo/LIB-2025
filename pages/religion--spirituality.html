@@ -3,37 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>True Crime</title>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="horror-theme.css">
+  <title>Religion / Spirituality</title>
+  <link rel="stylesheet" href="../css/style-dark.css">
 </head>
 <body>
   <main class="overlay">
-    <h1>True Crime</h1>
-    <p>This page will list all your True Crime books here.</p>
-    <a href="index.html">← Back to Library</a>
+    <h1>Religion / Spirituality</h1>
+    <p>This page will list all your Religion / Spirituality books here.</p>
+    <a href="index.html" class="back-image-button">
+  <img src="../images/CRUSTYHOME.png" alt="Back to Library">
+</a>
+
+
   </main>
 </body>
 </html>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>True Crime Books</title>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="horror-theme.css">
+  <title>Religion / Spirituality Books</title>
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <main class="overlay">
-    <h1>True Crime Books</h1>
+    <h1>Religion / Spirituality Books</h1>
 
     <h2>📚 Books You Own</h2>
     <ul id="book-list">
-
+      <!-- Saved books will appear here -->
     </ul>
 
     <h3>Add a New Book</h3>
@@ -43,14 +41,14 @@
     </form>
 
     <br>
-    <a href="index.html">← Back to Library</a>
+    
   </main>
 
   <script>
     const form = document.getElementById("book-form");
     const input = document.getElementById("book-input");
     const list = document.getElementById("book-list");
-    const STORAGE_KEY = "truecrimeBooks";
+    const STORAGE_KEY = "religionspiritualityBooks";
 
     const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
     savedBooks.forEach(title => addBookToList(title));

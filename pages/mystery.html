@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Psychology</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="history-theme.css">
+  <title>Mystery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/horror-theme.css">
+
 </head>
+
 <body>
   <main class="overlay">
-    <h1>Psychology</h1>
-    <p>This page will list all your Psychology books here.</p>
-   <a href="index.html" class="back-image-button">
-  <img src="CRUSTYHOME.png" alt="Back to Library">
-</a>
-
-
-
+    <h1>Mystery</h1>
+    <p>This page will list all your Mystery books here.</p>
+    <a href="index.html" class="back-image-button">
+      <img src="../images/CRUSTYHOME.png" alt="Back to Library">
+    </a>
   </main>
 </body>
+
 </html>
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Psychology Books</title>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="history-theme.css">
+  <title>Mystery Books</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/horror-theme.css">
+
 </head>
+
 <body>
   <main class="overlay">
-    <h1>Psychology Books</h1>
+    <h1>Mystery Books</h1>
 
     <h2>📚 Books You Own</h2>
     <ul id="book-list">
-      <!-- Saved books will appear here -->
+      <!-- Saved books will appear here god i hopeso -->
     </ul>
 
     <h3>Add a New Book</h3>
@@ -44,14 +52,13 @@
     </form>
 
     <br>
-    
   </main>
 
   <script>
     const form = document.getElementById("book-form");
     const input = document.getElementById("book-input");
     const list = document.getElementById("book-list");
-    const STORAGE_KEY = "psychologyBooks";
+    const STORAGE_KEY = "mysteryBooks";
 
     const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
     savedBooks.forEach(title => addBookToList(title));
@@ -74,4 +81,5 @@
     }
   </script>
 </body>
+
 </html>
