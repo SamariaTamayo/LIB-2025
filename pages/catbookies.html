@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cat Biscuit Cookies</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      position: relative;
+    }
+
+    /* Fullscreen background image */
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    /* Crusty cat back button */
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100px;
+      z-index: 2;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .back-button:hover {
+      transform: scale(1.05);
+    }
+
+    /* Story box overlay */
+    .story-box {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 140px auto 40px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    .story-box strong {
+      color: #b14d00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Recipe Image -->
+  <img src="../images/catcookies.jpeg" alt="Cat Biscuit Recipe" class="background">
+
+  <!-- Crusty Back Button -->
+  <a href="all-recipes.html">
+    <img src="../images/CRUSTYHOME.png" alt="Back to Recipes" class="back-button">
+  </a>
+
+  <!-- Story Content -->
+  <div class="story-box">
+    <p>
+      Around Christmastime, Drew's grandmother on his mother's side sent us a bunch of treats for the holidays. I opened the box while Drew was at work, and one of the items was a cat food box — but it looked like there were biscuits inside. I wasn’t sure if it was for Krusty, our cat, or for us.
+    </p>
+    <p>
+      When Drew got home, I set the cat biscuit box aside and joked, “Your grandma made us cat biscuits — let's give them to Krusty.” But to my surprise, I turned around and saw Drew eating one! He said, “Nope, these are cookies for us. Just like the shortbread my grandma makes — they're the best.”
+    </p>
+    <p>
+      I laughed and said I thought they were for the cat. He explained, “Yeah, she likes to reuse boxes.” From then on, we always knew that when his family sent us stuff, they'd just use any box around — and it still makes us laugh.
+    </p>
+    <p>
+      They're still one of my favorite cookies, and I beg him to ask her to make them every year around Christmastime. And ever since that first time, we’ve always called them: <strong>Cat Biscuit Cookies</strong>.
+    </p>
+  </div>
+
+</body>
+</html>

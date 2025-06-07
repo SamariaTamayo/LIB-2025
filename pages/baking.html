@@ -1,58 +1,76 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Baking Books</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Efficient Bakes</title>
+  <link rel="stylesheet" href="../css/baking.css">
+   <!-- Back to Library button -->
+  <a href="../index.html" class="back-image-button">
+    <img src="../images/CRUSTYHOME.png" alt="Back to Library">
+  </a>
 </head>
 <body>
-  <main class="overlay">
-    <h1>Baking</h1>
-    <p>This page will list all your Baking books here.</p>
+  <header>
+    <h1>Efficient Bakes</h1>
+    <p>Ranked by prep time, taste, and how worth it they actually are.</p>
+  </header>
 
-    <h2>📚 Books You Own</h2>
-    <ul id="book-list">
-      <!-- Saved books will appear here -->
-    </ul>
+  <div class="grid-container">
+    <section class="column bread">
+      <h2>Bread</h2>
+      <ul>
+        <li><strong>Sourdough</strong>
+          <p>
+            Prep Time: ★★★★☆<br>
+            Taste: ★★★★★<br>
+            Worth It: ★★★☆☆
+          </p>
+          <a href="#">Recipe</a> | 
+          <a href="#">Taste Tips</a> | 
+          <a href="#">Worth It?</a>
+        </li>
+        <!-- Add more bread -->
+      </ul>
+    </section>
 
-    <h3>Add a New Book</h3>
-    <form id="book-form">
-      <input type="text" id="book-input" placeholder="Enter book title" required>
-      <button type="submit">Add Book</button>
-    </form>
+    <section class="column sweet">
+      <h2>Sweet</h2>
+      <ul>
+        <li><strong>Brownies</strong>
+          <p>
+            Prep Time: ★★☆☆☆<br>
+            Taste: ★★★★☆<br>
+            Worth It: ★★★★★
+          </p>
+          <a href="#">Recipe</a> | 
+          <a href="#">Taste Tips</a> | 
+          <a href="#">Worth It?</a>
+        </li>
+        <!-- Add more sweets -->
+      </ul>
+    </section>
 
-    <a href="index.html" class="back-image-button">
-      <img src="../images/CRUSTYHOME.png" alt="Back to Library">
-    </a>
-  </main>
-
-  <script>
-    const form = document.getElementById("book-form");
-    const input = document.getElementById("book-input");
-    const list = document.getElementById("book-list");
-    const STORAGE_KEY = "bakingBooks";
-
-    const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || ["Binging with Babish"];
-    savedBooks.forEach(title => addBookToList(title));
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const bookTitle = input.value.trim();
-      if (bookTitle) {
-        addBookToList(bookTitle);
-        savedBooks.push(bookTitle);
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(savedBooks));
-        input.value = "";
-      }
-    });
-
-    function addBookToList(title) {
-      const li = document.createElement("li");
-      li.textContent = title;
-      list.appendChild(li);
-    }
-  </script>
+    <section class="column savoury">
+      <h2>Savoury</h2>
+      <ul>
+        <li><strong>Quiche</strong>
+          <p>
+            Prep Time: ★★★★★<br>
+            Taste: ★★★☆☆<br>
+            Worth It: ★★★★☆
+          </p>
+          <a href="#">Recipe</a> | 
+          <a href="#">Taste Tips</a> | 
+          <a href="#">Worth It?</a>
+        </li>
+        <!-- Add more savoury items -->
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
+
+ 
+

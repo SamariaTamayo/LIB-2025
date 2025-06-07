@@ -1,0 +1,77 @@
+body {
+  background-color: #f2f2f2;
+  color: #222;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #dcdcdc;
+  padding: 2rem;
+  text-align: center;
+  color: #111;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.column {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.column h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0.4rem 0;
+}
+
+a {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #777c7e;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.responsive-cat {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 2rem auto;
+  border-radius: 12px;
+}
+.back-image-button img {
+  width: 150px;         /* Adjust this size as needed */
+  height: auto;
+  display: block;
+  margin: 1rem auto;    /* Center the image */
+  border-radius: 12px;  /* Optional: rounded corners */
+  transition: transform 0.2s ease-in-out;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}

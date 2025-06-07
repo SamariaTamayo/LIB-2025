@@ -1,6 +1,6 @@
 body {
   font-family: 'Merriweather', serif;
-  background: url("horror-bg.jpg.png") no-repeat center center fixed;
+  background: url("../images/horror-bg.jpg.png") no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;

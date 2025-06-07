@@ -1,0 +1,74 @@
+/* Kid-Themed Children's Book List CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+  background-image: url('../images/kid-theme-bg.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff9900;
+  margin-bottom: 1rem;
+}
+
+.book-list {
+  max-width: 700px;
+  margin: auto;
+  background-color: #dff6fd;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border: 3px dashed #ffcc00;
+}
+
+.book-item {
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  margin: 0.25rem 0;
+  border-left: 8px solid #87ceeb;
+  background-color: #ffffffcc;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.book-item:hover {
+  background-color: #fff2c9;
+  cursor: pointer;
+}
+
+/* Optional book icons */
+.book-item::before {
+  content: '📚 ';
+}
+
+/* Make sure links inside look cute too */
+a {
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.back-image-button img {
+  width: 150px;         /* Adjust this size as needed */
+  height: auto;
+  display: block;
+  margin: 1rem auto;    /* Center the image */
+  border-radius: 12px;  /* Optional: rounded corners */
+  transition: transform 0.2s ease-in-out;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}

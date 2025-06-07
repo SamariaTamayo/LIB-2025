@@ -1,6 +1,6 @@
-/* === GLOBAL STYLES === */
+/* === GLOBAL STYLES? === */
 body {
-  background-image: url("image0.jpeg");
+  background-image: url("../images/image0.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -8,12 +8,12 @@ body {
   background-color: rgba(125, 226, 82, 0.2); /* light tint */
   color: rgb(41, 163, 51);
   font-family: Georgia, serif;
-  text-shadow: 2px 2px 4px rgba(247, 80, 80, 0.8);
+  text-shadow: 2px 2px 4px rgba(0, 42, 255, 0.8);
   margin: 0;
   padding: 0;
 }
 
-/*CONTAINERS dumb ass dont fuck with this
+/*CONTAINERS  dont mess  with this it took forver 
 main {
   padding: 30px;
   margin: 0 auto;
@@ -31,17 +31,26 @@ header {
 /* .overlay gurl */
 /* this box keeps my book chaos in check */
 .overlay {
-  background-color: rgba(75, 172, 70, 0.6); /* forest vibes but make it see-through */
-  padding: 2rem; /* gotta give it space to breathe */
-  margin: 2rem auto; /* center it like the main character it is */
-  border-radius: 12px; /* round those corners — we don’t do sharp edges here */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* drop a lil shadow like it’s mysterious */
-  max-width: 900px; /* big but not too big — like my TBR pile */
-  color: #111; /* dark text for high drama and high contrast */
+  background-color: rgba(34, 51, 34, 0.85); /* deeper green & more opaque */
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  max-width: 900px;
+  color: #f4f4f4; /* much lighter text */
+  font-family: 'Georgia', serif;
 }
+
 /* making sure my links are legible even when the background's wild */
 .overlay a {
   font-weight: bold; /* these links got confidence now */
+.overlay h1,
+.overlay h2,
+.overlay h3,
+.overlay h4 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* subtle drop shadow, no neon glow this time */
 }
 
@@ -51,18 +60,18 @@ header {
 .genre-biography { color: #2e8b57; }
 .genre-children { color: #ff69b4; }
 .genre-contemporary { color: #9370db; }
-.genre-dystopian { color: #708090; }
+.genre-dystopian { color: #06f01d; }
 .genre-folklore { color: #cd853f; }
 .genre-fantasy { color: #00ced1; }
 .genre-graphic { color: #daa520; }
 .genre-historical { color: #b22222; }
 .genre-history { color: #4682b4; }
-.genre-horror { color: #8b0000; }
+.genre-horror { color: #ff01c8; }
 .genre-magical { color: #9932cc; }
 .genre-middle { color: #f4a460; }
-.genre-mystery { color: #483d8b; }
-.genre-philosophy { color: #2f4f4f; }
-.genre-politics { color: #800000; }
+.genre-mystery { color: #bdb5f2; }
+.genre-philosophy { color: #a2ffff; }
+.genre-politics { color: #f2ff02; }
 .genre-psychology { color: #3cb371; }
 .genre-religion { color: #6a5acd; }
 .genre-romance { color: #db7093; }
@@ -109,7 +118,7 @@ header {
   box-shadow: 0 2px 4px rgba(168, 5, 5, 0.2);
 }
 
-/*  IMAGES/trumpsnudes  */
+/*  IMAGES/carousel need to link booksF1  */
 .scalable-image {
   max-width: 100%;
   height: auto;
@@ -193,4 +202,4 @@ section {
   z-index: 1000;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-}
+} } /* <-- closing media query */

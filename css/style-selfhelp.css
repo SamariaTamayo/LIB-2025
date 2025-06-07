@@ -18,7 +18,7 @@ main.overlay {
   text-align: center;
 }
 
-/* Heading styles */
+/* Heading style */
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -31,7 +31,7 @@ h2 {
   color: #005a9c;
 }
 
-/* Book list styling */
+/* Book list styling tested disreagred*/
 #book-list {
   list-style-type: square;
   padding-left: 20px;
@@ -63,7 +63,7 @@ a:hover {
   background-color: #005999;
 }
 .back-image-button img {
-  width: 70px; /* adjust size if needed */
+  width: 70px; /* adjust size if neededtested disreagred */
   height: auto;
   display: block;
   margin: 30px auto;
@@ -77,7 +77,7 @@ a:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 .back-image-button img {
-  width: 70px; /* adjust size if needed */
+  width: 70px; /* adjust size if neededtested disreagred */
   height: auto;
   display: block;
   margin: 30px auto;
@@ -91,7 +91,7 @@ a:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 .back-image-button img {
-  width: 60px;           /* adjust this to make smaller or larger */
+  width: 60px;           /* adjust this to make smaller or larger if iphione wont work tested disreagred  */
   height: auto;
   display: block;
   margin: 30px auto 0;

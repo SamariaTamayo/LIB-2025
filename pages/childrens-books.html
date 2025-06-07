@@ -1,72 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Children's Books</title>
- <link rel="stylesheet" href="style-kids.css">
+  <link rel="stylesheet" href="../css/kids.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Children’s Books</title>
 </head>
 <body>
-  <main class="overlay">
-    <h1>Children's Books</h1>
-    <p>This page will list all your Children's Books books here.</p>
-   <img src="../images/CRUSTYHOME.png">
-  <img src="CRUSTYHOME.png" alt="Back to Library">
+  <main>
+    <h1>Children’s Books</h1>
+   <div class="book-list">
+  <div class="book-item">Rocket Science for Babies</div>
+  <div class="book-item">Quantum Physics for Babies</div>
+  <div class="book-item">General Relativity for Babies</div>
+  <div class="book-item">Guess How Much I Love You</div>
+  <div class="book-item">Island of the Blue Dolphins</div>
+  <div class="book-item">Go the Fuck to Sleep</div>
+  <div class="book-item">Girl Goddess</div>
+  <div class="book-item">There Are Moms Way Worse Than You</div>
+  <div class="book-item">Newton's Physics for Babies</div>
+  <div class="book-item">Crane Trucks Opposites</div>
+  <div class="book-item">Will I Have a Friend</div>
+  <div class="book-item">Why Dad's Toot</div>
+  <div class="book-item">Physics</div>
+  <div class="book-item">Why a Son Needs a Dad</div>
+  <div class="book-item">A Nominee for Babies</div>
+  <div class="book-item">A Very Busy Spider</div>
+  <div class="book-item">A Pokemon Storybook Collection</div>
+  <div class="book-item">Where the Sidewalk Ends</div>
+  <div class="book-item">Little Rabbit Lost</div>
+  <div class="book-item">You're All My Favorite</div>
+  <div class="book-item">Brown Bear, Brown Bear, What Do You See</div>
+  <div class="book-item">Love You Forever</div>
+  <div class="book-item">Never Touch a Noisy Cow</div>
+</div>
 
-
+    <!-- Back to Library button -->
+    <a href="../index.html" class="back-image-button">
+      <img src="../images/CRUSTYHOME.png" alt="Back to Library">
+    </a>
   </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Children’s Books Books</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <main class="overlay">
-    <h1>Children’s Books Books</h1>
-
-    <h2>📚 Books You Own</h2>
-    <ul id="book-list">
-      <!-- Saved books will appear here -->
-    </ul>
-
-    <h3>Add a New Book</h3>
-    <form id="book-form">
-      <input type="text" id="book-input" placeholder="Enter book title" required>
-      <button type="submit">Add Book</button>
-    </form>
-
-    <br>
-  </main>
-
-  <script>
-    const form = document.getElementById("book-form");
-    const input = document.getElementById("book-input");
-    const list = document.getElementById("book-list");
-    const STORAGE_KEY = "childrensbooksBooks";
-
-    const savedBooks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
-    savedBooks.forEach(title => addBookToList(title));
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const bookTitle = input.value.trim();
-      if (bookTitle) {
-        addBookToList(bookTitle);
-        savedBooks.push(bookTitle);
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(savedBooks));
-        input.value = "";
-      }
-    });
-
-    function addBookToList(title) {
-      const li = document.createElement("li");
-      li.textContent = title;
-      list.appendChild(li);
-    }
-  </script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url("tattoos-bg.jpg") no-repeat center center fixed;
+  background: url("../images/tattoos-bg.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #fdfdfd;
   margin: 0;

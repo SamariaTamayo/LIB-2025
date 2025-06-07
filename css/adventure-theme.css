@@ -1,6 +1,6 @@
 body {
   font-family: 'Comic Neue', cursive;
-  background: url("adventure-bg.jpg.jpeg") no-repeat center center fixed;
+  background: url("../images/adventure-bg.jpg.jpeg") no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;

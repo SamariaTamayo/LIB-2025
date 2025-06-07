@@ -1,6 +1,6 @@
 body {
   font-family: 'Cormorant Garamond', serif;
-  background: url("romance-bg.jpg.png") no-repeat center center fixed;
+  background: url("../images/romance-bg.jpg.png") no-repeat center center fixed;
   background-size: cover;
   margin: 5;
   padding: 5;
