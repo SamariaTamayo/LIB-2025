@@ -1,71 +1,99 @@
-/* Fun and playful theme for Children's Books */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
 body {
-  font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
-  background: linear-gradient(to bottom right, #fff7ae, #b6e2f2);
+  font-family: 'Comic Neue', cursive;
+  background-color: #d4be9d;
   margin: 0;
-  padding: 0;
+  padding: 2rem;
   color: #333;
+  background-image: url('../images/kid-theme-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/* Main container */
-main {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.95);
-  border: 6px dashed #ffa726;
+main.overlay {
+  background-color: rgba(154, 19, 19, 0.85);
+  padding: 2rem;
+  max-width: 700px;
+  margin: 2rem auto;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Headings */
-h1, h2 {
+h1 {
   text-align: center;
-  color: #ff4081;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #ff7b00;
+  margin-bottom: 1rem;
 }
 
-/* Book list */
-ul {
-  list-style: "📖 ";
-  padding-left: 30px;
-  font-size: 1.2rem;
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #008080;
+  margin-bottom: 1rem;
 }
 
-li {
-  margin-bottom: 12px;
-  color: #4e4e4e;
+#book-list {
+  list-style-type: none;
+  padding: 0;
 }
 
-/* Back to library button */
-a {
-  display: inline-block;
-  background-color: #4dd0e1;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+#book-list li {
+  background-color: #fca90f;
+  border-left: 6px solid #0062f5;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
   transition: background-color 0.3s ease;
-  margin-top: 30px;
-  text-align: center;
 }
 
-a:hover {
-  background-color: #00acc1;
+#book-list li:hover {
+  background-color: #08515b;
 }
-.back-image-button img {
-  width: 60px;           /* adjust this to make smaller or larger */
-  height: auto;
-  display: block;
-  margin: 30px auto 0;
+
+form {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border: 2px solid #ffa500;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
-  transition: transform 0.3s ease;
+  font-size: 1rem;
+  width: 60%;
+  max-width: 300px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #ffa500;
+  color: rgb(255, 0, 0);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff8800;
+}
+
+.back-image-button img {
+  width: 60px;
+  height: auto;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
 }
 
 .back-image-button img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }

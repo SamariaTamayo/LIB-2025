@@ -2,24 +2,24 @@ body {
   font-family: 'Georgia', serif;
   background: url("../images/fantasy-harry.jpg") no-repeat center center fixed;
   background-size: cover;
-  color: #2e2b20;
+  color: #ffc800;
   margin: 0;
   padding: 0;
 }
 
 /* Soft overlay for readability */
 main {
-  background-color: rgba(255, 255, 240, 0.85);
+  background-color: rgba(95, 95, 13, 0.85);
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(161, 46, 46, 0.3);
 }
 
 header, footer {
-  background-color: #3d4b3d;
-  color: #f5f5dc;
+  background-color: #00ff00;
+  color: #0f32cf;
   text-align: center;
   padding: 20px;
   border-bottom: 4px solid #6a5a8f;
@@ -34,7 +34,7 @@ section {
 }
 
 a {
-  color: #4b5320;
+  color: #d9ff00;
   font-weight: bold;
   text-decoration: none;
 }

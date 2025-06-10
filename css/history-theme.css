@@ -4,7 +4,7 @@ body {
   background-size: cover;
   margin: 0;
   padding: 0;
-  color: #3b2e1d;
+  color: #2700b6;
 }
 
 main {
@@ -13,18 +13,18 @@ main {
   margin: 60px auto;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 0 25px rgba(59, 46, 29, 0.25); /* lightened the shadow */
+  box-shadow: 0 0 25px rgba(248, 246, 243, 0.25); /* lightened the shadow */
 }
 
 
 header, footer {
-  background-color: rgba(64, 48, 34, 0.6); /* was 0.85 — lighter now */
+  background-color: rgba(219, 109, 12, 0.6); /* was 0.85 — lighter now */
   color: #f5f0e6;
   text-align: center;
   padding: 20px;
   font-family: 'Playfair Display', serif;
   text-shadow: 0 0 5px #00000077;
-  border-bottom: 3px solid #b58e56;
+  border-bottom: 3px solid #f0ede9;
 }
 
 body {
@@ -37,19 +37,19 @@ section {
   margin-bottom: 25px;
   padding: 20px;
   background-color: #fcf6e3;
-  border-left: 6px solid #b58e56;
+  border-left: 6px solid #e8e6e3;
   border-radius: 8px;
 }
 
 /* Links with antique feel */
 a {
-  color: #6a4b2a;
+  color: #f5f3f1;
   font-weight: bold;
   text-decoration: none;
 }
 
 a:hover {
-  color: #b58e56;
+  color: #ffffff;
   text-decoration: underline;
 }
 .back-image-button img {

@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(to bottom, #0b1e36, #1a2c44);
+  color: #e0e6ed;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 2rem;
+}
+
+.overlay {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+img.skyrim-image {
+  float: left;
+  width: 40%;
+  margin: 0 2rem 1rem 0;
+  border: 4px solid #324f7c;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  color: #d6ecff;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.back-image-button img {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 2rem auto 0;
+  transition: transform 0.2s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.05);
+}

@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Patrick Hand', cursive;
-  background-color: #fff8f0;
+  background-color: #eee5db;
   margin: 0;
   padding: 2rem;
   color: #333;
@@ -50,7 +50,7 @@ h1 {
   content: '📚 ';
 }
 
-/* Make sure links inside look cute too */
+/* Makes sure links inside look cute too */
 a {
   color: #ff6600;
   text-decoration: none;
@@ -71,4 +71,59 @@ a:hover {
 
 .back-image-button img:hover {
   transform: scale(1.05); /* Slight zoom effect on hover */
+}
+.main-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.book-section {
+  flex: 1 1 60%;
+}
+.art-section {
+  flex: 1 1 30%;
+  background-color: #fff8fc;
+  padding: 1rem;
+  border: 3px dashed #ff007b;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.art-section figcaption {
+  font-size: 0.75rem;
+  color: #624646;
+  margin-top: 0.4rem;
+  font-style: italic;
+}
+
+.art-section img {
+  width: 190px;          /* This keeps images small */
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.2s ease-in-out;
+}
+.milo-text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.milo-text textarea {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #ff66aa;
+  border-radius: 10px;
+  resize: vertical;
+  width: 90%;
+  max-width: 300px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
