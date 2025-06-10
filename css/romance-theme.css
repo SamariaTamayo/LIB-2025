@@ -4,7 +4,7 @@ body {
   background-size: cover;
   margin: 5;
   padding: 5;
-  color: #e213a7;
+  color: #350534;
 }
 
 /* Soft, romantic layout that lets the image shine */
@@ -50,7 +50,7 @@ a:hover {
   text-decoration: underline;
 }
 .back-image-button img {
-  width: 70px; /* adjust size if needed */
+  width: 70px; /* */
   height: auto;
   display: block;
   margin: 30px auto;
@@ -64,7 +64,7 @@ a:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 .back-image-button img {
-  width: 60px;           /* adjust this to make smaller or larger */
+  width: 60px;           /* adjust this to make saller or larger */
   height: auto;
   display: block;
   margin: 30px auto 0;
