@@ -1,0 +1,70 @@
+/* philblue.css - Ravenclaw abstract theme */
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #1a2c48;
+  background-image: url("../images/philblue.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #f4f4f4;
+}
+
+main.overlay {
+  background-color: rgba(255, 255, 255, 0.05); /* almost invisible */
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px); /* Safari support */
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+
+
+h1, h2 {
+  color: #a2c3f7;
+  text-align: center;
+}
+
+ul#book-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul#book-list li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0.5rem 0;
+  padding: 0.6rem 1rem;
+  border-left: 4px solid #7aa6e8;
+  border-radius: 6px;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #7aa6e8;
+  border-radius: 6px;
+  width: 70%;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #7aa6e8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5c8dd6;
+}
+
+.back-image-button img {
+  width: 50px;
+  margin-top: 1rem;
+}

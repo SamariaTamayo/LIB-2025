@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Efficient Bakes</title>
   <link rel="stylesheet" href="../css/baking.css">
-   <!-- Back to Library button -->
-  <a href="../index.html" class="back-image-button">
-    <img src="../images/CRUSTYHOME.png" alt="Back to Library">
-  </a>
 </head>
 <body>
+  <!-- Back to Library button -->
+  <a href="../index.html" class="back-image-button">
+    <img src="../images/CRUSTYHOME.png" alt="Back to Library" class="crusty-cat-button">
+  </a>
+
   <header>
     <h1>Efficient Bakes</h1>
     <p>Ranked by prep time, taste, and how worth it they actually are.</p>
   </header>
 
+  <!-- 🔥 Video Section -->
+  <section class="video-demo">
+    <h2>Watch How It's Baked</h2>
+    <video width="640" height="360" controls>
+      <source src="../videos/baking-demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
   <div class="grid-container">
+    <!-- Bread Column -->
     <section class="column bread">
       <h2>Bread</h2>
       <ul>
@@ -31,10 +41,10 @@
           <a href="#">Taste Tips</a> | 
           <a href="#">Worth It?</a>
         </li>
-        <!-- Add more bread -->
       </ul>
     </section>
 
+    <!-- Sweet Column -->
     <section class="column sweet">
       <h2>Sweet</h2>
       <ul>
@@ -48,10 +58,10 @@
           <a href="#">Taste Tips</a> | 
           <a href="#">Worth It?</a>
         </li>
-        <!-- Add more sweets -->
       </ul>
     </section>
 
+    <!-- Savoury Column -->
     <section class="column savoury">
       <h2>Savoury</h2>
       <ul>
@@ -59,13 +69,12 @@
           <p>
             Prep Time: ★★★★★<br>
             Taste: ★★★☆☆<br>
-            Worth It: ★★★★☆
+            Worth It: ★★★★☆ 
           </p>
           <a href="#">Recipe</a> | 
           <a href="#">Taste Tips</a> | 
           <a href="#">Worth It?</a>
         </li>
-        <!-- Add more savoury items -->
       </ul>
     </section>
   </div>

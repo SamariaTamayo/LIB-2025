@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Comic Neue', cursive;
-  background-color: #d4be9d;
+  background-color: hsl(61, 99%, 67%);
   margin: 0;
   padding: 2rem;
   color: #333;
@@ -12,7 +12,7 @@ body {
 }
 
 main.overlay {
-  background-color: rgba(154, 19, 19, 0.85);
+  background-color: rgba(47, 216, 191, 0.85);
   padding: 2rem;
   max-width: 700px;
   margin: 2rem auto;
@@ -23,7 +23,7 @@ main.overlay {
 h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: #ff7b00;
+  color: #0c0601;
   margin-bottom: 1rem;
 }
 
@@ -40,7 +40,7 @@ h2 {
 }
 
 #book-list li {
-  background-color: #fca90f;
+  background-color: #dcdc6d;
   border-left: 6px solid #0062f5;
   margin: 0.5rem 0;
   padding: 0.5rem 1rem;
@@ -96,4 +96,13 @@ button:hover {
 
 .back-image-button img:hover {
   transform: scale(1.05);
+}
+.crusty-cat {
+  width: 100px; /* shrink it */
+  height: auto;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  cursor: pointer;
 }

@@ -1,54 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Historical Fiction</title>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/history-theme.css">
+  <link rel="stylesheet" href="../css/history-theme.css">
 </head>
+
 <body>
-  <main class="overlay">
+  <div class="left-panel main overlay">
     <h1>Historical Fiction</h1>
     <p>This page will list all your Historical Fiction books here.</p>
-   <a href="../index.html" class="back-image-button">
-  <img src="../images/CRUSTYHOME.png" alt="Back to Library">
+    <a href="../index.html" class="back-btn">
+  <img src="../images/CRUSTYHOME.png" alt="Back to Library" style="width: 60px;">
 </a>
-  </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Historical Fiction Books</title>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/history-theme.css">
-</head>
-<body>
-  <main class="overlay">
-    <h1>Historical Fiction Books</h1>
 
+  </div>
+
+  <div class="right-panel main overlay book-frame">
     <h2>📚 Books You Own</h2>
     <ul id="book-list">
-     <ul>
-  <li>A Thousand Splendid Suns</li>
-  <li>No Heaven for Good Boys</li>
-  <li>Shanghai Girls</li>
-  <li>Waiting by Ha Jin</li>
-  <li>War and Peace</li>
-</ul>
+      <li>A Thousand Splendid Suns</li>
+      <li>No Heaven for Good Boys</li>
+      <li>Shanghai Girls</li>
+      <li>Waiting by Ha Jin</li>
+      <li>War and Peace</li>
     </ul>
 
-    <h3>Add a New Book</h3>
+    <h3 style="margin-top: 1.5rem;">
+      兄弟は他人の始まりではなく、永遠の味方である。兄さん、あなたは私の敵を家の前に連れてきて、それをハエと呼んだ。
+    </h3>
+
     <form id="book-form">
       <input type="text" id="book-input" placeholder="Enter book title" required>
       <button type="submit">Add Book</button>
     </form>
-
-    <br>
-
-  </main>
+  </div>
 
   <script>
     const form = document.getElementById("book-form");
@@ -77,4 +66,5 @@
     }
   </script>
 </body>
+
 </html>

@@ -1,81 +1,67 @@
 body {
-  font-family: 'Merriweather', serif;
-  background: url("../images/history-bg.jpg.png") no-repeat center center fixed;
-  background-size: cover;
   margin: 0;
-  padding: 0;
-  color: #2700b6;
+  font-family: 'Georgia', serif;
+  background-image: url("../images/history-bg.jpg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: #d4b349;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 main {
-  background-color: rgba(255, 248, 233, 0.7); /* was 0.9 — lowered for more transparency */
-  max-width: 950px;
-  margin: 60px auto;
-  padding: 40px;
+  width: 30%;
+  min-width: 280px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 0 25px rgba(248, 246, 243, 0.25); /* lightened the shadow */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: #000;
 }
 
-
-header, footer {
-  background-color: rgba(219, 109, 12, 0.6); /* was 0.85 — lighter now */
-  color: #f5f0e6;
-  text-align: center;
-  padding: 20px;
-  font-family: 'Playfair Display', serif;
-  text-shadow: 0 0 5px #00000077;
-  border-bottom: 3px solid #f0ede9;
+.left-panel {
+  text-align: left;
 }
 
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.right-panel {
+  text-align: left;
 }
 
-/* Section layout */
-section {
-  margin-bottom: 25px;
-  padding: 20px;
-  background-color: #fcf6e3;
-  border-left: 6px solid #e8e6e3;
-  border-radius: 8px;
-}
-
-/* Links with antique feel */
-a {
-  color: #f5f3f1;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
-.back-image-button img {
-  width: 70px; /* adjust size if needed */
-  height: auto;
+img.back-btn {
+  width: 50px;
   display: block;
-  margin: 30px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease;
+  margin-top: 1rem;
 }
-
-.back-image-button img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+.book-frame {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  color: black;
+  width: 300px;
+  margin-left: 60vw; /* ✅ pushes the box to the far right */
 }
-.back-image-button img {
-  width: 60px;           /* adjust this to make smaller or larger */
+.crusty-cat-button {
+  width: 80px;
   height: auto;
-  display: block;
-  margin: 30px auto 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
-  transition: transform 0.3s ease;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.back-image-button img:hover {
+.crusty-cat-button:hover {
   transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
 }
