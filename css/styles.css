@@ -1,4 +1,4 @@
-/* === GLOBAL STYLES? === */
+/* === GLOBAL STYLES === */
 body {
   background-image: url("../images/image0.jpeg");
   background-size: cover;
@@ -6,7 +6,6 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-color: rgba(125, 226, 82, 0.2);
-  /* light tint */
   color: rgb(41, 163, 51);
   font-family: Georgia, serif;
   text-shadow: 2px 2px 4px rgba(0, 42, 255, 0.8);
@@ -14,7 +13,7 @@ body {
   padding: 0;
 }
 
-/*CONTAINERS  dont mess  with this it took forver 
+/* CONTAINERS - don't mess with this it took forever */
 main {
   padding: 30px;
   margin: 0 auto;
@@ -30,143 +29,58 @@ header {
 }
 
 /* .overlay gurl */
-/* this box keeps my book chaos in check */
 .overlay {
   background-color: rgba(34, 51, 34, 0.85);
-  /* deeper green & more opaque */
   padding: 2rem;
   margin: 2rem auto;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   max-width: 900px;
   color: #f4f4f4;
-  /* much lighter text */
   font-family: 'Georgia', serif;
 }
 
-/* making sure my links are legible even when the background's wild */
 .overlay a {
   font-weight: bold;
-
-  /* these links got confidence now */
-  .overlay h1,
-  .overlay h2,
-  .overlay h3,
-  .overlay h4 {
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-  }
-
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  /* subtle drop shadow, no neon glow this time */
 }
 
-
-/* GENRECOLORS */
-.genre-adventure {
-  color: #ff5733;
+.overlay h1,
+.overlay h2,
+.overlay h3,
+.overlay h4 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
-.genre-biography {
-  color: #2e8b57;
-}
+/* GENRE COLORS */
+.genre-adventure { color: #ff5733; }
+.genre-biography { color: #2e8b57; }
+.genre-children { color: #ff69b4; }
+.genre-contemporary { color: #9370db; }
+.genre-dystopian { color: #06f01d; }
+.genre-folklore { color: #cd853f; }
+.genre-fantasy { color: #00ced1; }
+.genre-graphic { color: #daa520; }
+.genre-historical { color: #b22222; }
+.genre-history { color: #4682b4; }
+.genre-horror { color: #ff01c8; }
+.genre-magical { color: #9932cc; }
+.genre-middle { color: #f4a460; }
+.genre-mystery { color: #bdb5f2; }
+.genre-philosophy { color: #a2ffff; }
+.genre-politics { color: #f2ff02; }
+.genre-psychology { color: #3cb371; }
+.genre-religion { color: #6a5acd; }
+.genre-romance { color: #db7093; }
+.genre-science { color: #20b2aa; }
+.genre-scifi { color: #00bfff; }
+.genre-selfhelp { color: #ff8c00; }
+.genre-thriller { color: #c71585; }
+.genre-travel { color: #468499; }
+.genre-truecrime { color: #9cc94d; }
+.genre-ya { color: #f0148a; }
 
-.genre-children {
-  color: #ff69b4;
-}
-
-.genre-contemporary {
-  color: #9370db;
-}
-
-.genre-dystopian {
-  color: #06f01d;
-}
-
-.genre-folklore {
-  color: #cd853f;
-}
-
-.genre-fantasy {
-  color: #00ced1;
-}
-
-.genre-graphic {
-  color: #daa520;
-}
-
-.genre-historical {
-  color: #b22222;
-}
-
-.genre-history {
-  color: #4682b4;
-}
-
-.genre-horror {
-  color: #ff01c8;
-}
-
-.genre-magical {
-  color: #9932cc;
-}
-
-.genre-middle {
-  color: #f4a460;
-}
-
-.genre-mystery {
-  color: #bdb5f2;
-}
-
-.genre-philosophy {
-  color: #a2ffff;
-}
-
-.genre-politics {
-  color: #f2ff02;
-}
-
-.genre-psychology {
-  color: #3cb371;
-}
-
-.genre-religion {
-  color: #6a5acd;
-}
-
-.genre-romance {
-  color: #db7093;
-}
-
-.genre-science {
-  color: #20b2aa;
-}
-
-.genre-scifi {
-  color: #00bfff;
-}
-
-.genre-selfhelp {
-  color: #ff8c00;
-}
-
-.genre-thriller {
-  color: #c71585;
-}
-
-.genre-travel {
-  color: #468499;
-}
-
-.genre-truecrime {
-  color: #9cc94d;
-}
-
-.genre-ya {
-  color: #f0148a;
-}
-
-/* BUTTONS  */
+/* BUTTONS */
 .book-links {
   text-align: center;
   margin-top: 20px;
@@ -201,7 +115,7 @@ header {
   box-shadow: 0 2px 4px rgba(168, 5, 5, 0.2);
 }
 
-/*  IMAGES/carousel need to link booksF1  */
+/* IMAGES */
 .scalable-image {
   max-width: 100%;
   height: auto;
@@ -217,7 +131,7 @@ header {
   border-radius: 12px;
 }
 
-/*  LINKS  */
+/* LINKS */
 a {
   color: inherit;
   text-decoration: none;
@@ -235,8 +149,24 @@ section {
   border-radius: 8px;
 }
 
-/* RESPONSIVE syle  */
-@media (max-width: 600px) {
+/* === RESPONSIVE STYLES === */
+@media screen and (max-width: 600px) {
+  body {
+    background-size: cover;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 20px;
+    margin: 20px 10px;
+    max-width: 100%;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
   .navbar ul {
     display: block;
     text-align: center;
@@ -247,9 +177,39 @@ section {
     margin: 10px 0;
   }
 
+  .navbar a {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
   .overlay {
     padding: 1rem;
     margin: 1rem;
+  }
+
+  .video-wrapper {
+    float: none;
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .video-wrapper iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .back-image-button img {
+    width: 50px;
+  }
+
+  .corner-image {
+    width: 120px;
+    bottom: 5px;
+    right: 5px;
   }
 }
 
@@ -273,7 +233,6 @@ section {
     font-size: 0.9rem;
     color: #ddd;
     background-color: rgba(0, 0, 0, 0.7);
-    /* dark overlay */
     margin-top: 40px;
     border-top: 1px solid #444;
   }
@@ -287,59 +246,5 @@ section {
     z-index: 1000;
     border-radius: 12px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-  }
-}
-
-/* <-- closing media query */
-@media screen and (max-width: 600px) {
-  body {
-    background-size: cover;
-    padding: 10px;
-  }
-
-  main {
-    padding: 20px;
-    margin: 20px 10px;
-    max-width: 100%;
-    font-size: 1rem;
-  }
-
-  h1, h2 {
-    font-size: 1.5rem;
-  }
-
-  .navbar li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .navbar a {
-    display: block;
-    width: 90%;
-    margin: 5px auto;
-    padding: 10px;
-    font-size: 1rem;
-  }
-
-  .video-wrapper {
-    float: none;
-    margin: 20px auto;
-    max-width: 100%;
-    padding: 5px;
-  }
-
-  .video-wrapper iframe {
-    width: 100%;
-    height: auto;
-  }
-
-  .back-image-button img {
-    width: 50px;
-  }
-
-  .corner-image {
-    width: 120px;
-    bottom: 5px;
-    right: 5px;
   }
 }
