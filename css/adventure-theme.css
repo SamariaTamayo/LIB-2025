@@ -4,17 +4,17 @@ body {
   background-size: cover;
   margin: 0;
   padding: 0;
-  color: #222;
+  color: #0f16d9;
 }
 
-/* Content area with fun overlay */
+/* Content area overlay */
 main {
   background-color: rgba(255, 255, 255, 0.85);
   max-width: 900px;
   margin: 60px auto;
   padding: 40px;
   border-radius: 16px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(211, 0, 0, 0.3);
   border: 4px dashed #ffcc00;
 }
 
@@ -63,7 +63,7 @@ a:hover {
 .navbar a {
   display: inline-block;
   background-color: #ffdc5e;
-  color: #1d1d1d;
+  color: #ff0505;
   padding: 12px 20px;
   border-radius: 12px;
   font-family: 'Comic Neue', cursive;
@@ -105,4 +105,22 @@ a:hover {
 
 .back-image-button img:hover {
   transform: scale(1.1);
+}
+.video-wrapper {
+  float: right; /* alleps sam */
+  margin: 20px;
+  border: 3px dashed orange;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+.corner-image {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
 }
