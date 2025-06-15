@@ -211,7 +211,18 @@ section {
     bottom: 5px;
     right: 5px;
   }
+    .crusty-pic {
+    width: 120px;
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: none;
+    display: block;
+    margin: 1rem auto;
+  }
 }
+
+
 
 @media (min-width: 1000px) {
   body {
@@ -238,13 +249,13 @@ section {
   }
 
   .crusty-pic {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 200px;
-    z-index: 1000;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-  }
+  width: 120px;
+  position: relative;
+  top: 0;
+  right: 0;
+  transform: none;
+  display: block;
+  margin: 1rem auto;
+}
+
 }
