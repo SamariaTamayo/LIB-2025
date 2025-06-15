@@ -21,7 +21,7 @@ main {
   backdrop-filter: blur(5px);
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   color: #000;
 }
 
@@ -38,16 +38,19 @@ img.back-btn {
   display: block;
   margin-top: 1rem;
 }
+
 .book-frame {
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(6px);
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   color: black;
   width: 300px;
-  margin-left: 60vw; /* ✅ pushes the box to the far right */
+  margin-left: 60vw;
+  /* ✅ pushes the box to the far right */
 }
+
 .crusty-cat-button {
   width: 80px;
   height: auto;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,52 +9,7 @@ body {
   padding: 0;
 }
 
-
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-}
-.container {
-  max-width: 900px;
-  margin: 60px auto;
-  background-color: rgba(0, 0, 0, 0.6); /* transparent black overlay */
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Optional: book list styling */
-ul.book-list {
-  list-style: square;
-  padding-left: 20px;
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-ul.book-list li {
-  color: #f0f0f0;
-  margin-bottom: 10px;
-}
-
-h1 {
-  text-align: center;
-  color: #068737;
-  margin-bottom: 1rem;
-}
-
-.book-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.book-list li {
-  padding: 0.5rem;
-  border-bottom: 1px solid #ddd;
-  transition: background-color 0.3s ease;
-}
-
-
+/* Book header styles */
 .book-header {
   text-align: center;
   margin-top: 30px;
@@ -66,36 +22,99 @@ h1 {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
-.back-image-button img {
-  width: 70px; /* adjust size if needed */
-  height: auto;
-  display: block;
+
+/* Polaroid style wrapper */
+.polaroid {
+  width: 280px;
+  background: white;
+  padding: 10px 10px 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  text-align: center;
   margin: 30px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease;
+  transform: rotate(-2deg);
+  position: relative;
 }
 
-.back-image-button img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+.fancy-polaroid {
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
 }
-.back-image-button img {
-  width: 70px; /* adjust size if needed */
-  height: auto;
-  display: block;
-  margin: 30px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease;
+.fancy-polaroid:hover {
+  transform: rotate(0deg) scale(1.02);
 }
 
-.back-image-button img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+.polaroid img {
+  width: 100%;
+  border-radius: 4px;
 }
+
+/* Caption under Polaroid */
+.caption {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Tape Corners */
+.tape {
+  width: 60px;
+  height: 20px;
+  background: rgba(255, 255, 200, 0.8);
+  position: absolute;
+  z-index: 2;
+  transform: rotate(-5deg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.tape-tl {
+  top: -10px;
+  left: -15px;
+  transform: rotate(-15deg);
+}
+.tape-tr {
+  top: -10px;
+  right: -15px;
+  transform: rotate(15deg);
+}
+
+/* Book list container */
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Book list text */
+ul.book-list {
+  list-style: square;
+  padding-left: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+ul.book-list li {
+  color: #f0f0f0;
+  margin-bottom: 10px;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+/* Section heading */
+h1 {
+  text-align: center;
+  color: #068737;
+  margin-bottom: 1rem;
+}
+
+/* Back button styling */
 .back-image-button img {
-  width: 60px;           /* adjust this to make smaller or larger */
+  width: 60px;
   height: auto;
   display: block;
   margin: 30px auto 0;
@@ -106,5 +125,14 @@ h1 {
 
 .back-image-button img:hover {
   transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
+/* Responsive for Polaroid */
+@media (max-width: 768px) {
+  .polaroid {
+    float: none;
+    margin: 20px auto;
+    transform: rotate(0deg);
+  }
+}

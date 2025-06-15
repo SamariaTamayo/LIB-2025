@@ -18,7 +18,8 @@ main {
 }
 
 /* Header & Footer styling */
-header, footer {
+header,
+footer {
   background-color: rgba(50, 0, 0, 0.7);
   color: #ffffff;
   text-align: center;
@@ -48,8 +49,10 @@ a:hover {
   text-decoration: underline;
   color: #ff1a1a;
 }
+
 .back-image-button img {
-  width: 70px; /* adjust size if needed */
+  width: 70px;
+  /* adjust size if needed */
   height: auto;
   display: block;
   margin: 30px auto;
@@ -62,8 +65,10 @@ a:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
+
 .back-image-button img {
-  width: 60px;           /* adjust this to make smaller or larger */
+  width: 60px;
+  /* adjust this to make smaller or larger */
   height: auto;
   display: block;
   margin: 30px auto 0;
@@ -75,6 +80,7 @@ a:hover {
 .back-image-button img:hover {
   transform: scale(1.1);
 }
+
 .horror-quote {
   font-family: 'Georgia', serif;
   font-style: italic;
@@ -88,6 +94,7 @@ a:hover {
   margin-right: auto;
   text-align: center;
 }
+
 .horror-quote span {
   display: block;
   margin-top: 0.5rem;

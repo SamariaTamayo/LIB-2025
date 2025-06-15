@@ -15,18 +15,20 @@ body {
   box-sizing: border-box;
 }
 
-  main.overlay {
+main.overlay {
   background-color: rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 
-h1, h2 {
+h1,
+h2 {
   color: #ffecd4;
 }
 
-input[type="text"], button {
+input[type="text"],
+button {
   padding: 0.5rem;
   margin-top: 0.5rem;
   border: none;
@@ -50,6 +52,7 @@ button:hover {
 ul {
   padding-left: 1.5rem;
 }
+
 .crusty-cat {
   max-width: 150px;
   height: auto;

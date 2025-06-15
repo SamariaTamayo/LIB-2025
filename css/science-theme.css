@@ -19,7 +19,8 @@ main {
 }
 
 /* === Header and Footer === */
-header, footer {
+header,
+footer {
   background-color: #00a6a6;
   color: white;
   text-align: center;
@@ -84,7 +85,8 @@ a:hover {
 .crusty-cat {
   position: absolute;
   top: -50px;
-  left: calc(50% - 30px); /* Centers the cat above the button */
+  left: calc(50% - 30px);
+  /* Centers the cat above the button */
   width: 60px;
   height: auto;
   z-index: 2;

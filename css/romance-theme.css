@@ -18,7 +18,8 @@ main {
 }
 
 /* Header & Footer */
-header, footer {
+header,
+footer {
   background-color: rgba(201, 76, 124, 0.9);
   color: white;
   text-align: center;
@@ -49,8 +50,10 @@ a:hover {
   color: #c40a51;
   text-decoration: underline;
 }
+
 .back-image-button img {
-  width: 70px; /* */
+  width: 70px;
+  /* */
   height: auto;
   display: block;
   margin: 30px auto;
@@ -63,8 +66,10 @@ a:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
+
 .back-image-button img {
-  width: 60px;           /* adjust this to make saller or larger */
+  width: 60px;
+  /* adjust this to make saller or larger */
   height: auto;
   display: block;
   margin: 30px auto 0;

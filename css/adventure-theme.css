@@ -19,7 +19,8 @@ main {
 }
 
 /* Headings */
-h1, h2 {
+h1,
+h2 {
   text-align: center;
   color: #ff5e99;
 }
@@ -44,6 +45,7 @@ a:hover {
   color: #ff4081;
   text-decoration: underline;
 }
+
 .navbar {
   text-align: center;
   margin-top: 40px;
@@ -79,8 +81,10 @@ a:hover {
   color: white;
   box-shadow: none;
 }
+
 .back-image-button img {
-  width: 70px; /* adjust size if needed */
+  width: 70px;
+  /* adjust size if needed */
   height: auto;
   display: block;
   margin: 30px auto;
@@ -93,8 +97,10 @@ a:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
+
 .back-image-button img {
-  width: 60px;           /* adjust this to make smaller or larger */
+  width: 60px;
+  /* adjust this to make smaller or larger */
   height: auto;
   display: block;
   margin: 30px auto 0;
@@ -106,21 +112,24 @@ a:hover {
 .back-image-button img:hover {
   transform: scale(1.1);
 }
+
 .video-wrapper {
-  float: right; /* alleps sam */
+  float: right;
+  /* alleps sam */
   margin: 20px;
   border: 3px dashed orange;
   padding: 10px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
+
 .corner-image {
   position: fixed;
   bottom: 10px;
   right: 10px;
   width: 200px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }

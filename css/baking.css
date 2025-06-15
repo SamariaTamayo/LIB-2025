@@ -24,7 +24,7 @@ header {
   background: #ffffff;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
 
 .column h2 {
@@ -56,6 +56,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 .responsive-cat {
   max-width: 100%;
   height: auto;
@@ -63,15 +64,20 @@ a:hover {
   margin: 0 auto 2rem auto;
   border-radius: 12px;
 }
+
 .back-image-button img {
-  width: 150px;         /* Adjust this size as needed */
+  width: 150px;
+  /* Adjust this size as needed */
   height: auto;
   display: block;
-  margin: 1rem auto;    /* Center the image */
-  border-radius: 12px;  /* Optional: rounded corners */
+  margin: 1rem auto;
+  /* Center the image */
+  border-radius: 12px;
+  /* Optional: rounded corners */
   transition: transform 0.2s ease-in-out;
 }
 
 .back-image-button img:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect on hover */
 }

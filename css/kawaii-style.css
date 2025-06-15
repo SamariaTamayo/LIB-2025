@@ -12,7 +12,8 @@ body {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* dark semi-transparent box */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* dark semi-transparent box */
   padding: 2rem;
   border-radius: 10px;
   max-width: 800px;
@@ -20,7 +21,8 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
   color: #ffcc66;
   text-shadow: 1px 1px 5px black;

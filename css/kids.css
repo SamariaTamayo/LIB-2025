@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 2rem;
   color: #333;
-  background-image: url('../images/kid-theme-bg.png'); 
+  background-image: url('../images/kid-theme-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -26,7 +26,7 @@ h1 {
   background-color: #dff6fd;
   border-radius: 20px;
   padding: 2rem;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border: 3px dashed #ffcc00;
 }
 
@@ -60,18 +60,24 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 .back-image-button img {
-  width: 150px;         /* Adjust this size as needed */
+  width: 150px;
+  /* Adjust this size as needed */
   height: auto;
   display: block;
-  margin: 1rem auto;    /* Center the image */
-  border-radius: 12px;  /* Optional: rounded corners */
+  margin: 1rem auto;
+  /* Center the image */
+  border-radius: 12px;
+  /* Optional: rounded corners */
   transition: transform 0.2s ease-in-out;
 }
 
 .back-image-button img:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect on hover */
 }
+
 .main-layout {
   display: flex;
   justify-content: space-between;
@@ -84,6 +90,7 @@ a:hover {
 .book-section {
   flex: 1 1 60%;
 }
+
 .art-section {
   flex: 1 1 30%;
   background-color: #fff8fc;
@@ -96,6 +103,7 @@ a:hover {
   align-items: center;
   gap: 1.5rem;
 }
+
 .art-section figcaption {
   font-size: 0.75rem;
   color: #624646;
@@ -104,13 +112,15 @@ a:hover {
 }
 
 .art-section img {
-  width: 190px;          /* This keeps images small */
+  width: 190px;
+  /* This keeps images small */
   height: auto;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
   transition: transform 0.2s ease-in-out;
 }
+
 .milo-text {
   text-align: center;
   margin-top: 1rem;

@@ -97,8 +97,10 @@ button:hover {
 .back-image-button img:hover {
   transform: scale(1.05);
 }
+
 .crusty-cat {
-  width: 100px; /* shrink it */
+  width: 100px;
+  /* shrink it */
   height: auto;
   position: fixed;
   top: 20px;

@@ -62,8 +62,10 @@ a {
 a:hover {
   background-color: #005999;
 }
+
 .back-image-button img {
-  width: 70px; /* adjust size if neededtested disreagred */
+  width: 70px;
+  /* adjust size if neededtested disreagred */
   height: auto;
   display: block;
   margin: 30px auto;
@@ -76,8 +78,10 @@ a:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
+
 .back-image-button img {
-  width: 70px; /* adjust size if neededtested disreagred */
+  width: 70px;
+  /* adjust size if neededtested disreagred */
   height: auto;
   display: block;
   margin: 30px auto;
@@ -90,8 +94,10 @@ a:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
+
 .back-image-button img {
-  width: 60px;           /* adjust this to make smaller or larger if iphione wont work tested disreagred  */
+  width: 60px;
+  /* adjust this to make smaller or larger if iphione wont work tested disreagred  */
   height: auto;
   display: block;
   margin: 30px auto 0;

@@ -18,7 +18,8 @@ main.overlay {
 }
 
 /* Headings */
-h1, h2 {
+h1,
+h2 {
   color: #00ffff;
   text-align: center;
 }
@@ -61,8 +62,10 @@ a {
 a:hover {
   background-color: #00cccc;
 }
+
 .back-image-button img {
-  width: 60px;           /* adjust this to make smaller or larger */
+  width: 60px;
+  /* adjust this to make smaller or larger */
   height: auto;
   display: block;
   margin: 30px auto 0;

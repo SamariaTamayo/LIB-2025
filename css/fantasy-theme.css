@@ -17,7 +17,8 @@ main {
   box-shadow: 0 0 15px rgba(161, 46, 46, 0.3);
 }
 
-header, footer {
+header,
+footer {
   background-color: #00ff00;
   color: #0f32cf;
   text-align: center;
@@ -42,8 +43,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 .back-image-button img {
-  width: 70px; /* adjust size if needed */
+  width: 70px;
+  /* adjust size if needed */
   height: auto;
   display: block;
   margin: 30px auto;
@@ -56,8 +59,10 @@ a:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
+
 .back-image-button img {
-  width: 60px;           /* adjust this to make smaller or larger */
+  width: 60px;
+  /* adjust this to make smaller or larger */
   height: auto;
   display: block;
   margin: 30px auto 0;
