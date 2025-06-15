@@ -188,3 +188,39 @@ h1 {
     right: 5px;
   }
 }
+.back-image-button img {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 30px auto 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 600px) {
+  .back-image-button img {
+    width: 50px;
+  }
+}
+.back-image-button {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 999;
+}
+
+.back-image-button img {
+  width: 60px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.back-image-button img:hover {
+  transform: scale(1.1);
+}
