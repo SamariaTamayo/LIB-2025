@@ -2,113 +2,129 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="This is a personal Library it holds books owned." />
-  <title>My Library</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="This is a personal Library it holds books owned." />
+    <title>My Library</title>
 
-  <!-- Bootstrap + Your Custom CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Bootstrap + Your Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+
 </head>
 
 <body>
-  <div class="container">
-    <main class="overlay">
-      <h1>Library</h1>
-      <h2>Data held and stored by Samaria Tamayo</h2>
-      <h3>Crusty la Boy La Spada — Head of Decorative Staff (Security/Grooming)</h3>
-      <h4>Updated 6/11/2025</h4>
+    <div class="container">
+        <main class="overlay">
+            <h1>Library</h1>
+            <h2>Data held and stored by Samaria Tamayo</h2>
+            <h3>Crusty la Boy La Spada — Head of Decorative Staff (Security/Grooming)</h3>
+            <h4>Updated 6/11/2025</h4>
 
-      <img src="images/crustynap.png" alt="Crusty Nap" class="crusty-pic">
+            <img src="images/crustynap.png" alt="Crusty Nap" class="crusty-pic">
 
-      <div class="book-links">
-        <p>
-          <a href="https://www.amazon.com/hz/wishlist/ls/JSZKL6YNMNOC?ref_=wl_share" target="_blank" class="book-button">📚 Jump to Amazon link :p</a>
+            <div class="book-links">
+                <p>
+                    <a href="https://www.amazon.com/hz/wishlist/ls/JSZKL6YNMNOC?ref_=wl_share" target="_blank"
+                        class="book-button">📚 Jump to Amazon link :p</a>
+                </p>
+                <p>
+                    <a href="../pages/books_i_own_alphabetical_linked.html" class="book-button">📘 View My Book
+                        Collection</a>
+                </p>
+            </div>
+
+            <h2>📖 The La Spadas lib 📖</h2>
+
+            <!-- Carousel -->
+            <div id="bookCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/booksf1.jpeg" class="d-block w-100 scalable-image" alt="Bookshelf 1">
+                    </div>
+                    <!-- Add remaining carousel items -->
+                    <div class="carousel-item">
+                        <img src="images/booksf2.jpeg" class="d-block w-100 scalable-image" alt="Bookshelf 2">
+                    </div>
+                    <!-- Repeat for other shelves up to booksf11.jpeg -->
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- Collapsible Genre Section -->
+            <div class="my-4">
+                <button class="btn btn-outline-light w-100 mb-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#genreList" aria-expanded="false" aria-controls="genreList">
+                    📚 Show Genres
+                </button>
+
+                <div class="collapse" id="genreList">
+                    <div class="genre-links">
+                        <p class="genre-adventure"><strong><a href="pages/adventure.html">Adventure</a></strong></p>
+                        <p class="genre-biography"><strong><a href="pages/biography-and-memoir.html">Biography and
+                                    Memoir</a></strong></p>
+                        <p class="genre-children"><strong><a href="pages/childrens-books.html">Children’s
+                                    Books</a></strong></p>
+                        <p class="genre-contemporary"><strong><a href="pages/contemporary-fiction.html">Contemporary
+                                    Fiction</a></strong></p>
+                        <p class="genre-dystopian"><strong><a href="pages/dystopian.html">Dystopian</a></strong></p>
+                        <p class="genre-folklore"><strong><a href="pages/fairy-tales--folklore.html">Fairy Tales /
+                                    Folklore</a></strong></p>
+                        <p class="genre-fantasy"><strong><a href="pages/fantasy.html">Fantasy</a></strong></p>
+                        <p class="genre-graphic"><strong><a href="pages/graphic-novels.html">Graphic Novels</a></strong>
+                        </p>
+                        <p class="genre-historical"><strong><a href="pages/historical-fiction.html">Historical
+                                    Fiction</a></strong></p>
+                        <p class="genre-horror"><strong><a href="pages/horror.html">Horror</a></strong></p>
+                        <p class="genre-magical"><strong><a href="pages/magical-realism.html">Magical
+                                    Realism</a></strong></p>
+                        <p class="genre-middle"><strong><a href="pages/middle-grade.html">Middle Grade</a></strong></p>
+                        <p class="genre-mystery"><strong><a href="pages/mystery.html">Mystery</a></strong></p>
+                        <p class="genre-philosophy"><strong><a href="pages/philosophy.html">Philosophy</a></strong></p>
+                        <p class="genre-politics"><strong><a href="pages/politics.html">Politics</a></strong></p>
+                        <p class="genre-psychology"><strong><a href="pages/psychology.html">Psychology</a></strong></p>
+                        <p class="genre-religion"><strong><a href="pages/religion--spirituality.html">Religion /
+                                    Spirituality</a></strong></p>
+                        <p class="genre-romance"><strong><a href="pages/romance.html">Romance</a></strong></p>
+                        <p class="genre-scifi"><strong><a href="pages/science-fiction-sci-fi.html">Science Fiction
+                                    (Sci-Fi)</a></strong></p>
+                        <p class="genre-selfhelp"><strong><a href="pages/self-help--personal-development.html">Self-Help
+                                    / Personal Development</a></strong></p>
+                        <p class="genre-travel"><strong><a href="pages/textbooks.html">Textbooks</a></strong></p>
+                        <p class="genre-truecrime"><strong><a href="pages/true-crime.html">True Crime</a></strong></p>
+                        <p class="genre-ya"><strong><a href="pages/young-adult-ya.html">Young Adult (YA)</a></strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                <a href="https://www.amazon.com/hz/wishlist/ls/JSZKL6YNMNOC?ref_=wl_share" target="_blank"
+                    rel="noopener noreferrer">
+                    🧠 Go to My Amazon Account 🧠
+                </a>
+            </p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>© 2025 Samaria Tamayo. All rights reserved. <br>
+            Designed with ✨ and supervised by Crusty la Spada 🐾
         </p>
-        <p>
-          <a href="../pages/books_i_own_alphabetical_linked.html" class="book-button">📘 View My Book Collection</a>
-        </p>
-      </div>
+    </footer>
 
-      <h2>📖 The La Spadas lib 📖</h2>
-
-      <!-- Carousel -->
-      <div id="bookCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/booksf1.jpeg" class="d-block w-100 scalable-image" alt="Bookshelf 1">
-          </div>
-          <!-- Add remaining carousel items -->
-          <div class="carousel-item">
-            <img src="images/booksf2.jpeg" class="d-block w-100 scalable-image" alt="Bookshelf 2">
-          </div>
-          <!-- Repeat for other shelves up to booksf11.jpeg -->
-        </div>
-
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      <!-- Collapsible Genre Section -->
-      <div class="my-4">
-        <button class="btn btn-outline-light w-100 mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#genreList" aria-expanded="false" aria-controls="genreList">
-          📚 Show Genres
-        </button>
-
-        <div class="collapse" id="genreList">
-          <div class="genre-links">
-            <p class="genre-adventure"><strong><a href="pages/adventure.html">Adventure</a></strong></p>
-            <p class="genre-biography"><strong><a href="pages/biography-and-memoir.html">Biography and Memoir</a></strong></p>
-            <p class="genre-children"><strong><a href="pages/childrens-books.html">Children’s Books</a></strong></p>
-            <p class="genre-contemporary"><strong><a href="pages/contemporary-fiction.html">Contemporary Fiction</a></strong></p>
-            <p class="genre-dystopian"><strong><a href="pages/dystopian.html">Dystopian</a></strong></p>
-            <p class="genre-folklore"><strong><a href="pages/fairy-tales--folklore.html">Fairy Tales / Folklore</a></strong></p>
-            <p class="genre-fantasy"><strong><a href="pages/fantasy.html">Fantasy</a></strong></p>
-            <p class="genre-graphic"><strong><a href="pages/graphic-novels.html">Graphic Novels</a></strong></p>
-            <p class="genre-historical"><strong><a href="pages/historical-fiction.html">Historical Fiction</a></strong></p>
-            <p class="genre-horror"><strong><a href="pages/horror.html">Horror</a></strong></p>
-            <p class="genre-magical"><strong><a href="pages/magical-realism.html">Magical Realism</a></strong></p>
-            <p class="genre-middle"><strong><a href="pages/middle-grade.html">Middle Grade</a></strong></p>
-            <p class="genre-mystery"><strong><a href="pages/mystery.html">Mystery</a></strong></p>
-            <p class="genre-philosophy"><strong><a href="pages/philosophy.html">Philosophy</a></strong></p>
-            <p class="genre-politics"><strong><a href="pages/politics.html">Politics</a></strong></p>
-            <p class="genre-psychology"><strong><a href="pages/psychology.html">Psychology</a></strong></p>
-            <p class="genre-religion"><strong><a href="pages/religion--spirituality.html">Religion / Spirituality</a></strong></p>
-            <p class="genre-romance"><strong><a href="pages/romance.html">Romance</a></strong></p>
-            <p class="genre-scifi"><strong><a href="pages/science-fiction-sci-fi.html">Science Fiction (Sci-Fi)</a></strong></p>
-            <p class="genre-selfhelp"><strong><a href="pages/self-help--personal-development.html">Self-Help / Personal Development</a></strong></p>
-            <p class="genre-travel"><strong><a href="pages/textbooks.html">Textbooks</a></strong></p>
-            <p class="genre-truecrime"><strong><a href="pages/true-crime.html">True Crime</a></strong></p>
-            <p class="genre-ya"><strong><a href="pages/young-adult-ya.html">Young Adult (YA)</a></strong></p>
-          </div>
-        </div>
-      </div>
-
-      <p>
-        <a href="https://www.amazon.com/hz/wishlist/ls/JSZKL6YNMNOC?ref_=wl_share" target="_blank" rel="noopener noreferrer">
-          🧠 Go to My Amazon Account 🧠
-        </a>
-      </p>
-    </main>
-  </div>
-
-  <footer class="site-footer">
-    <p>© 2025 Samaria Tamayo. All rights reserved. <br>
-      Designed with ✨ and supervised by Crusty la Spada 🐾
-    </p>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
