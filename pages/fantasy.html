@@ -2,51 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/fantasy-theme.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fantasy</title>
-</head>
-
-<body>
-  <main class="overlay">
-    <h1>Fantasy</h1>
-    <p>T“Of course it is happening inside your head, Harry, but why on earth should that mean it is not real?”
-      — Albus Dumbledore, Harry Potter and the Deathly Hallows.</p>
-    <a href="../index.html" class="back-image-button">
-      <img src="../images/CRUSTYHOME.png" alt="Back to Library">
-    </a>
-  </main>
-</body>
-
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
   <title>Fantasy Books</title>
+  <link rel="stylesheet" href="../css/fantasy-theme.css">
 </head>
 
 <body>
   <main class="overlay">
     <h1>Fantasy Books</h1>
+    <p>“Of course it is happening inside your head, Harry, but why on earth should that mean it is not real?”
+      — Albus Dumbledore</p>
+
+    <a href="../index.html" class="back-image-button">
+      <img src="../images/CRUSTYHOME.png" alt="Back to Library">
+    </a>
 
     <h2>📚 Books You Own</h2>
     <ul id="book-list">
-      <h2>Fantasy</h2>
-      <ul>
-        <li>Wicked</li>
-        <li>Furies of Calderon by Jim Butcher</li>
-        <li>Harry Potter Series - Books 1-7</li>
-        <li>Jim Butcher - Death Masks, Storm Front, Blood Rites, Grave Peril, Fool Moon</li>
-        <li>Lore</li>
-        <li>Medusa's Sisters</li>
-        <li>Quidditch Through the Ages</li>
-        <li>The Atlas Six</li>
-        <li>The Magicians Trilogy by Lev Grossman</li>
-      </ul>
+      <li>Wicked</li>
+      <li>Furies of Calderon by Jim Butcher</li>
+      <li>Harry Potter Series - Books 1–7</li>
+      <li>Jim Butcher - Death Masks, Storm Front, Blood Rites, Grave Peril, Fool Moon</li>
+      <li>Lore</li>
+      <li>Medusa's Sisters</li>
+      <li>Quidditch Through the Ages</li>
+      <li>The Atlas Six</li>
+      <li>The Magicians Trilogy by Lev Grossman</li>
     </ul>
 
     <h3>Add a New Book</h3>
@@ -54,7 +36,6 @@
       <input type="text" id="book-input" placeholder="Enter book title" required>
       <button type="submit">Add Book</button>
     </form>
-    <br>
   </main>
 
   <script>
@@ -82,4 +63,7 @@
       li.textContent = title;
       list.appendChild(li);
     }
-  
+  </script>
+</body>
+
+</html>
