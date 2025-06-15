@@ -68,3 +68,55 @@ img.back-btn {
   transform: scale(1.1);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
 }
+@media screen and (max-width: 600px) {
+  body {
+    background-size: cover;
+    padding: 10px;
+  }
+
+  main {
+    padding: 20px;
+    margin: 20px 10px;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar a {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .video-wrapper {
+    float: none;
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .video-wrapper iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .back-image-button img {
+    width: 50px;
+  }
+
+  .corner-image {
+    width: 120px;
+    bottom: 5px;
+    right: 5px;
+  }
+}
